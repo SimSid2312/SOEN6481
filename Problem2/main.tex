@@ -1,62 +1,185 @@
 \documentclass{article}
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath}
+\usepackage{tikz}
 
-\title{Problem 2}
+\title{Problem 2 - Interview}
 \date{January 2019}
+\makeatletter
+\newcommand*{\radiobutton}{%
+  \@ifstar{\@radiobutton0}{\@radiobutton1}%
+}
+\newcommand*{\@radiobutton}[1]{%
+  \begin{tikzpicture}
+    \pgfmathsetlengthmacro\radius{height("X")/2}
+    \draw[radius=\radius] circle;
+    \ifcase#1 \fill[radius=.6*\radius] circle;\fi
+  \end{tikzpicture}%
+}
+\makeatother
+
 
 \begin{document}
 
 \noindent
-\large\textbf{Problem 2} \hfill \textbf{Simran Sidhu} \\
+\large\textbf{Problem 2 - Interview} \hfill \textbf{Simran Sidhu} \\
 \normalsize SOEN6481 \hfill \textbf{40011611} \\
-\section{Introduction about the interviewee}
-The interviewee of this project is : Ms. Nileesha Fernando who is currently per suing her graduation in Master of Software Engineering and has completed her bachelors in computer science. Apart from this she is also working part time as Full Stack PHP intern at a software company in Montreal.
-My reasons for choosing her are as follows :\\
-1. Completed a course in System Requirement Specification at Concordia with a grade - A+  under professor - Abdelwahab Elnaka in her masters.\\ 
-2. She coded a calculator using JavaScript,HTML,CSS as a side project.\\
-3. She took various other courses involving complex mathematical computation both in masters and bachelors.
 \section{Interview}
-Before interviewing her , I briefly explained what my project is about and gave an overview of what knowledge i have gathered so far about the number assigned to me i.e. natural logarithm of 2. Then we discussed about the irrationality of natural logarithm of 2. 
+\subsection{Interview 1}
+Q1. Your Name -  Vino Shankar\\\\
+Q2. What do you do in your daily life?\\ 
+Data scientist\\
+Professional Skills- Astrophysics\\\\
+Q3. What is your highest Qualification?\\
+Doctorate from University of Birmingham, UK \\\\
+Q4. Generic question about the scientific calculator, can you share your past experience of using a scientific calculator?\\
+Used extensively\\\\
+Q5. Have you ever dealt with irrational numbers may be in your school, university or work? If yes, can you share any particular concept or project where you used them?\\
+Not used them in my work\\\\
+Q6. Have you used natural logarithms in any of your previous work or as a school project? If yes, can you share any particular concept or project where you used them?\\
+Yes, used when dealing with visualization of sparse matrix, feature selection for modelling, in verifying the results of regression analysis, etc\\\\
+Q7. How will you describe the frequency of your usage of natural logarithm?
+\begin{itemize}
+\item[\radiobutton] Rarely used
+\item[\radiobutton*] Frequently used
+\item[\radiobutton] Somewhat in between Rare and Frequent Usage
+\end{itemize}
+Q8. Can you illustrate an example which can demonstrate the fact that using a natural logarithm is helpful- Any real-world application?\\
+When looking at a very large dataset with few repetitive values, plotting them as such will not make much sense. However, when you plot the log values, you will be better able to understand the data and compare the different frequency bins.\\\\
+Q9. How do you prefer solving an equation involving a natural logarithm?
+\begin{itemize}
+\item[\radiobutton*] Using a Scientific Calculator
+\item[\radiobutton] Manually
+\item[\radiobutton] Both
+\end{itemize}
+Q10. Any challenges you faced while using this number i.e. Natural logarithm with or without a calculator?\\
+Not really\\\\
+Q11. Have you used the natural logarithm of 2 in any of your previous work or as a school project? If yes, can you share any particular concept or project where you used them?\\
+Not used them much\\\\
+Q12. How will you describe the frequency of your usage of the natural logarithm of 2- rarely used or frequently used?
+\begin{itemize}
+\item[\radiobutton*] Rarely used
+\item[\radiobutton] Frequently used
+\item[\radiobutton] Somewhat in between Rare and Frequent Usage
+\end{itemize}
+Q13. Can you illustrate an example for me which can demonstrate the fact that using a natural logarithm of 2 is helpful- Any real-world application?\\
+N/a\\\\
+Q14. When you use the natural logarithm of a number do you round off the digits and if so how many decimal places do you prefer rounding off the result? \\
+Usually 3\\\\
+Q15. Any feature, one or more, you feel that should be there in the scientific calculator to make it easier for the user to perform complex mathematical equation easily using a natural logarithm of 2?\\
+N/a\\\\
+Q16.Any challenges you faced while using this number i.e. Natural logarithm of 2 with or without a calculator?\\
+N/a\\\\
 
-Q1 - Have you used natural logarithms in any of previous work or as a school project ? \\\\
-Ans - I used natural logarithms in my undergraduate course like - physics,machine learning ,artificial intelligence,statistics.Also i took 
-Algorithm Design Techniques in my masters. Since all these course involves computing complex equation hence i have used natural logarithm many times. Not only this , in some hard to solve problems the use of natural logarithm made it easier for me to compute them.\\
-\\
-Q2 - For the natural logarithm of 2  did you use it and was it rarely used or frequently used ?
 
-Ans - I have used natural logarithms a lot in courses like Algorithm Design, however as far as i can remember , i didn't really used logarithm of 2. But  I did used natural logarithm of a number specially in topics like finding the complexity i.e  Big-O notation problems.Actually, using natural logrithm was fun as all the properties of logrithm i.e Multiplication,division,power etc are also applicable to natural logrithm so it was interesting to compute log or ln involving equations.\\
-\\
-Q3 - Could you illustrate an example for me which can demonstrate the fact that using a natural logarithm is helpful?\\
-Ans - I will explain it using an example , we used to solve question like - 
-simplify the express:\\
 
-$ln (e^{-3})$ \\
-$\implies ln_e(e^{-3})$ = $-3$
-We were solving such question but if i have to solve a number that has  
-$ln_e(2)$  here we have a number 2 inside the bracket i would use a calculator for solving an expression involving it , as manually i do not think i can further simplify it.\\
-\\
-Q4 - Do you prefer solving it using a calculator or manually ?\\
-Ans - I would be inclined towards using a calculator to quickly compute the natural logarithm of number as we just have to press the button Ln and then enter the number after it.\\
-\\
-Q5 - Any challenges you faced while using this number i.e. Natural logrithm of 2 with or without a calculator?\\
-Ans- I would use a calculator to solve problems using an expression Ln(2) as its  natural log of base e is of 2 - a number and not an expression that has exponential form.\\
-\\
-Q6 - Generic question about the scientific calculator , can you share your past experience of using a scientific calculator ?\\
-Ans- I have used the calculator for educational purposes. In my mathematics and physics classes, it was vital to use the scientific calculator during lab experiments to perform data analysis. I used the Casio S-V P.A.M calculator and sometimes I used online scientific calculators to perform more complex scientific equations. The main drawback with my current scientific calculator is that it cannot perform complex functionality in a simple manner.\\
-\\
-Q6 - Any feature you feel should be there in the calculator to make it easier for the user to perform complex mathematical equation easily?\\
+\subsection{Interview 2}
+Q1. Your Name -  Manjit\\\\
+Q2. What do you do in your daily life?\\
+Teaching, Assistant Professor of Mathematics at Punjabi University.\\\\
+Q3. What is your highest Qualification?\\
+PhD in Mathematics from Thapar Institute of Engineering and Technology, India.\\\\
+Q4. Generic question about the scientific calculator, can you share your past experience of using a scientific calculator?\\
+Nothing special, but one thing that I found useful about scientific calculator is use of brackets, using brackets I was used to solve complex fractions carrying several numerical values.\\\\
+Q5. Have you ever dealt with irrational numbers may be in your school, university or work? If yes, can you share any particular concept or project where you used them?\\
+As I am PhD in Mathematics, so irrational number are quite familiar to me. One thing that first fascinated me about irrational is the proof that Sqrt{2} is irration which I read in Rudin's book.\\\\
+Q6. Have you used natural logarithms in any of your previous work or as a school project? If yes, can you share any particular concept or project where you used them?\\
+As I already told I am PhD in mathematics so logarithm was part of daily routine.\\\\
+Q7. How will you describe the frequency of your usage of natural logarithm?
+\begin{itemize}
+\item[\radiobutton] Rarely used
+\item[\radiobutton*] Frequently used
+\item[\radiobutton] Somewhat in between Rare and Frequent Usage
+\end{itemize}
+Q8. Can you illustrate an example which can demonstrate the fact that using a natural logarithm is helpful- Any real-world application?\\
+Any physical model which involves exponential equation of any sort will definitely lead to application of logarithms.\\\\
+Q9. How do you prefer solving an equation involving a natural logarithm?
+\begin{itemize}
+\item[\radiobutton*] Using a Scientific Calculator
+\item[\radiobutton] Manually
+\item[\radiobutton] Both
+\end{itemize}
+Q10. Any challenges you faced while using this number i.e. Natural logarithm with or without a calculator?\\
+Hardly.\\\\
+Q11. Have you used the natural logarithm of 2 in any of your previous work or as a school project? If yes, can you share any particular concept or project where you used them?\\
+Yes\\\\
+Q12. How will you describe the frequency of your usage of the natural logarithm of 2- rarely used or frequently used?\\
+\begin{itemize}
+\item[\radiobutton] Rarely used
+\item[\radiobutton] Frequently used
+\item[\radiobutton*] Somewhat in between Rare and Frequent Usage
+\end{itemize}
+Q13. Can you illustrate an example for me which can demonstrate the fact that using a natural logarithm of 2 is helpful- Any real-world application?\\
+In computing compound interest the use of natural logrithm is very prevalent.\\\\
+Q14. When you use the natural logarithm of a number do you round off the digits and if so how many decimal places do you prefer rounding off the result? \\
+2 decimal places\\\\
+Q15. Any feature, one or more, you feel that should be there in the scientific calculator to make it easier for the user to perform complex mathematical equation easily using a natural logarithm of 2?\\
+The features in scientific calculators are already self explaining.\\\\
+Q16.Any challenges you faced while using this number i.e. Natural logarithm of 2 with or without a calculator?\\
+No.
 
-Ans - This might not be related to the function you have been asked for your project but rather a feature that i think i dont have on my scientific calculator is computing the log base x of n , where x can be any number other than 10 and n is any number . \\
-How i have to calculate it using a scientific calculator is : 
- $(log_{10} n ) / log_{10} b$ 
-I know that Casio calculator do have the feature of compute the log of any base of a number but i feel they should make this feature a must for all the calculators.\\ 
+\subsection{Interview 3}
+Q1. Your Name -  Nileesha Fernando\\
+Q2. What do you do in your daily life?\\
+Student and working part time as Full Stack PHP intern at PlanetRate,Montreal\\\\ 
+Q3. What is your highest Qualification?\\
+Pursuing Master of Software Engineering at Concordia University,Montreal\\\\
+Q4. Generic question about the scientific calculator, can you share your past experience of using a scientific calculator?\\
+I have used the calculator for educational purposes. In my mathematics
+and physics classes, it was vital to use the scientific calculator during lab ex-
+experiments to perform data analysis. I used the Casio S-V P.A.M calculator and
+sometimes I used online scientific calculators to perform more complex scientific equations. The main drawback with my current scientific calculator is that it cannot perform complex functionality in a simple manner.\\\\
+Q5. Have you ever dealt with irrational numbers may be in your school, university or work? If yes, can you share any particular concept or project where you used them?\\
+Yes, in my undergraduate courses - physics and math.\\\\
+Q6. Have you used natural logarithms in any of your previous work or as a school project? If yes, can you share any particular concept or project where you used them?\\
+I have used natural logarithms in my undergraduate course like - Physics,Math,Machine Learning , Artificial intelligence,Statistics.Also i took Algorithm Design Techniques in my masters. Since all these course involve computing complex equation hence i have used natural logarithm many times. Not only this , in some hard to solve problems the use of natural logarithm made it easier for me to compute them.\\\\
+Q7. How will you describe the frequency of your usage of natural logarithm?
+\begin{itemize}
+\item[\radiobutton] Rarely used
+\item[\radiobutton] Frequently used
+\item[\radiobutton*] Somewhat in between Rare and Frequent Usage
+\end{itemize}
+Q8. Can you illustrate an example which can demonstrate the fact that using a natural logarithm is helpful- Any real-world application?\\
+I remember solving problems that involved exponential term ,in my math and algorithm design courses, using natural logarithm manually. In the real world application i can say they can be useful in computing complexity of an algorithm.\\\\
+Q9. How do you prefer solving an equation involving a natural logarithm? 
+\begin{itemize}
+\item[\radiobutton*] Using a Scientific Calculator
+\item[\radiobutton] Manually
+\item[\radiobutton] Both
+\end{itemize}
+Q10. Any challenges you faced while using this number i.e. Natural logarithm with or without a calculator?\\
+None\\\\
+Q11. Have you used the natural logarithm of 2 in any of your previous work or as a school project? If yes, can you share any particular concept or project where you used them?\\
+Not used\\\\
+Q12. How will you describe the frequency of your usage of the natural logarithm of 2- rarely used or frequently used?\\
+\begin{itemize}
+\item[\radiobutton*] Rarely used
+\item[\radiobutton] Frequently used
+\item[\radiobutton] Somewhat in between Rare and Frequent Usage
+\end{itemize}
+Q13. Can you illustrate an example for me which can demonstrate the fact that using a natural logarithm of 2 is helpful- Any real-world application?\\
+Never really used this number in particular but it was a part of complex equation i will compute its value using a scientific calculator.\\\\
+Q14. When you use the natural logarithm of a number do you round off the digits and if so how many decimal places do you prefer rounding off the result? \\
+3\\\\
+Q15. Any feature, one or more, you feel that should be there in the scientific calculator to make it easier for the user to perform complex mathematical equation easily using a natural logarithm of 2?\\
+None related to natural logarithm\\\\
+Q16.Any challenges you faced while using this number i.e. Natural logarithm of 2 with or without a calculator?\\
+None\\
+\section{Rationale for selecting the three interviewees} 
+\subsection{Reason for choosing Ms. Vino Shankar as interviewee:}
+She is a Data Scientist and her job profile demands from her to apply  analytic skills , knowledge of statistics and programming to fetch data and then analyze it and find interesting pattern out of a large data set. 
+This suggests that she is dealing with complex mathematical equation at work.
+\subsection{Reason for choosing Mr. Manjit as interviewee :}
+Mr. Manjit is Mathematics professor,holding a Phd from one of the renowned university in India - Thapar Institute of Engineering and Technology.
+By interviewing him i was able to collect knowledge from a mathematician.
 
-Q7- When you use natural logarithm of a number do you round off the digits and if so how many decimal place do you round off the result ?\\ 
-Ans - As far as my memory goes , i was always rounding off a natural logarithm of a number up to 3 decimal place like for instance in your function i know the 
-$ln_{e} 2$ is an irrational number with a value 0.69314... .\\
-So in this case i would just round off it to 0.6931 and use it in my equation to reduce it further.
+\subsection{Reason for choosing Ms. Nileesha Fernando as interview:}
+She is a currently persuing her masters degree(Master of Software Engineering) at Concordia University and has successfully completed course - Software Requirement Specification in fall 2018 under professor - Abdelwahab Elnaka with a grade : A+. Additionally, as a side project she created a calculator application using : JavaScript,HTML,CSS.
+She was able to provide me with the information about the relevance of natural logarithm of 2 in student community of Computer Science/Software Engineering.
 
-\section{Analysis about Interview}
-Interviewing Ms. Nileesha Frenando suggested that she has used the concept - natural logrithm in many significant courses of her major.However has not dealt with natural logrithm of 2 in particular.She mentioned that if she needs to solve an complex equation that has $ln_{e}(2)$ she would use value returned by a calculator (scientific calculator) for the function and the reason she mentiones is that as it has no exponential term rather has a number 2 which according to her leaves her with no means to further simplify it manually.To add to that she mentioned a must be present feature in all the calculator i.e. a single press button to compute the log of any base of a number.
+\section{Analysis of interview :}
+All three interviewees have used the scientific calculator a lot in computing complex mathematical equations.For the use of irrational number s it is interesting to note that irrational number are not being used by  data-scientist professionals in their day to day work.Regarding the use of natural logarithm all three of them have used it extensively i.e. they pointed out its usage in plotting a large data after computing the natural log of the value, in computing complexity of algorithm and any physical model that has an exponential term in it.All the three of them prefer using a scientific calculator to calculate the value of natural logarithm.None them have dealt with natural logarithm of 2 related problems in particular however Mr. Manjit,mathematician, mentioned about the real world application of this number that it can used to compute compound interest.They usually prefer rounding off the natural logarithm value to 2 to 3 decimal places when using it in an mathematical equation.It was also noted that none of them feel a need of a change that is required in the scientific calculator for computing natural logarithm of number.
+
+
+
 \end{document}
