@@ -1,0 +1,1812 @@
+
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{latexsym}
+\usepackage{amsfonts}
+\usepackage[normalem]{ulem}
+\usepackage[backend=biber,
+style=numeric,
+sorting=none,
+isbn=false,
+doi=false,
+url=false,
+]{biblatex}\addbibresource{bibliography.bib}
+\usepackage{array}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{subfig}
+\usepackage{wrapfig}
+\usepackage{wasysym}
+\usepackage{enumitem}
+\usepackage{adjustbox}
+\usepackage{ragged2e}
+\usepackage[svgnames,table]{xcolor}
+\usepackage{tikz}
+\usepackage{longtable}
+\usepackage{changepage}
+\usepackage{setspace}
+\usepackage{hhline}
+\usepackage{multicol}
+\usepackage{tabto}
+\usepackage{float}
+\usepackage{multirow}
+\usepackage{makecell}
+\usepackage{fancyhdr}
+\usepackage[toc,page]{appendix}
+\usepackage[hidelinks]{hyperref}
+\usetikzlibrary{shapes.symbols,shapes.geometric,shadows,arrows.meta}
+\tikzset{>={Latex[width=1.5mm,length=2mm]}}
+\usepackage{flowchart}\usepackage[paperheight=11.0in,paperwidth=8.5in,left=0.5in,right=0.5in,top=0.5in,bottom=0.5in,headheight=1in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\TabPositions{0.5in,1.0in,1.5in,2.0in,2.5in,3.0in,3.5in,4.0in,4.5in,5.0in,5.5in,6.0in,6.5in,7.0in,}
+\urlstyle{same}
+
+
+
+\title{Project- Enternity:Numbers}
+\date{January 2019}
+\makeatletter
+\newcommand*{\radiobutton}{%
+  \@ifstar{\@radiobutton0}{\@radiobutton1}%
+}
+\newcommand*{\@radiobutton}[1]{%
+  \begin{tikzpicture}
+    \pgfmathsetlengthmacro\radius{height("X")/2}
+    \draw[radius=\radius] circle;
+    \ifcase#1 \fill[radius=.6*\radius] circle;\fi
+  \end{tikzpicture}%
+}
+\makeatother
+\begin{document}
+\noindent
+\large\textbf{Project- Enternity:Numbers} \hfill \textbf{Simran Sidhu} \\
+\normalsize SOEN6481 \hfill \textbf{40011611} \\
+\section{Problem 1: Brief description of Natural logarithm of 2}
+Definitions :\\
+Irrational Numbers - are the numbers that cannot be represented as ratio or a fraction.\\\\
+Natural Logarithm -  The natural logarithm of a number x is nothing but log to the base e of x. Here  e has a approximate value of 2.718.\\
+Natural logarithm is computing the time taken to reach the desired growth.\\
+$log_e{x}$ can be written as ln x\\
+ ln is called the natural log.\\\\
+Natural Logarithm of 2 - The project is based on the natural logrithm of 2 ie. $ln_e{2}$ . \\
+The value of $ln_e{2} \approx 0.69314718056$ and it is an irrational number i.e cannot be expressed in fractional form.
+
+The proof of $ln_e{2}$ being irrational goes something like :\\
+Let suppose, $ln_e{2}$ is rational i.e. there exist a x,y integers  $>0$ and they can represent the natural log of 2.\\
+Therefore it can be said :\\ 
+$ln_e{2}=x/y$\\
+Applying exponential to both LHS and RHS , we get:\\
+$e^{ln_e{2}}=e^{x / y}$\\
+$2=e^{x / y}$\\
+$2^y=e^{x}$\\
+
+Since we know e is a transcendental number and from the theorm mentioned the famous book - "Proofs from the book" [1],Page 45, $e^r$ , where r is rational number not equal 0 , is irrational we can say that $ln_e{2}$ is also an irrational number i.e. cannot be denoted as ratio of two integers with value $>0$. The understanding of the proof was gathered from the website [2] - concept explained by Richard Morris, Maths tutor, doctorate in mathematics/computer science.
+
+\subsection*{Application of natural logarithm of 2}
+The uniqueness of this number has been noticed in below concepts:
+
+1. Half-life : Natural Logarithm of 2 plays a significant role in computing half life of a substance i.e computing the time taken by a substance to reduce to half of it initial value.This is concept is used in nuclear physics and biology.\\\\
+2. Finance - The Rule 72 : Natural Logarithm of 2 is used in finance sector as a way to quickly compute annually computed interest and continously compounded interest.  i.e. when we have to find the time taken (in years) to double the principle at a given interest rate, we have to divide 72 by interest rate(given). And this number 72 is calculated using natural logarithm of 2.
+
+\section{Problem2 : Interview}
+\subsection{Interview 1}
+Q1. Your Name -  Vino Shankar\\\\
+Q2. What do you do in your daily life?\\ 
+Data scientist\\
+Professional Skills- Astrophysics\\\\
+Q3. What is your highest Qualification?\\
+Doctorate from University of Birmingham, UK \\\\
+Q4. Generic question about the scientific calculator, can you share your past experience of using a scientific calculator?\\
+Used extensively\\\\
+Q5. Have you ever dealt with irrational numbers may be in your school, university or work? If yes, can you share any particular concept or project where you used them?\\
+Not used them in my work\\\\
+Q6. Have you used natural logarithms in any of your previous work or as a school project? If yes, can you share any particular concept or project where you used them?\\
+Yes, used when dealing with visualization of sparse matrix, feature selection for modelling, in verifying the results of regression analysis, etc\\\\
+Q7. How will you describe the frequency of your usage of natural logarithm?
+\begin{itemize}
+\item[\radiobutton] Rarely used
+\item[\radiobutton*] Frequently used
+\item[\radiobutton] Somewhat in between Rare and Frequent Usage
+\end{itemize}
+Q8. Can you illustrate an example which can demonstrate the fact that using a natural logarithm is helpful- Any real-world application?\\
+When looking at a very large dataset with few repetitive values, plotting them as such will not make much sense. However, when you plot the log values, you will be better able to understand the data and compare the different frequency bins.\\\\
+Q9. How do you prefer solving an equation involving a natural logarithm?
+\begin{itemize}
+\item[\radiobutton*] Using a Scientific Calculator
+\item[\radiobutton] Manually
+\item[\radiobutton] Both
+\end{itemize}
+Q10. Any challenges you faced while using this number i.e. Natural logarithm with or without a calculator?\\
+Not really\\\\
+Q11. Have you used the natural logarithm of 2 in any of your previous work or as a school project? If yes, can you share any particular concept or project where you used them?\\
+Not used them much\\\\
+Q12. How will you describe the frequency of your usage of the natural logarithm of 2- rarely used or frequently used?
+\begin{itemize}
+\item[\radiobutton*] Rarely used
+\item[\radiobutton] Frequently used
+\item[\radiobutton] Somewhat in between Rare and Frequent Usage
+\end{itemize}
+Q13. Can you illustrate an example for me which can demonstrate the fact that using a natural logarithm of 2 is helpful- Any real-world application?\\
+N/a\\\\
+Q14. When you use the natural logarithm of a number do you round off the digits and if so how many decimal places do you prefer rounding off the result? \\
+Usually 3\\\\
+Q15. Any feature, one or more, you feel that should be there in the scientific calculator to make it easier for the user to perform complex mathematical equation easily using a natural logarithm of 2?\\
+N/a\\\\
+Q16.Any challenges you faced while using this number i.e. Natural logarithm of 2 with or without a calculator?\\
+N/a
+\subsection{Interview 2}
+Q1. Your Name -  Manjit\\\\
+Q2. What do you do in your daily life?\\
+Teaching, Assistant Professor of Mathematics at Punjabi University.\\\\
+Q3. What is your highest Qualification?\\
+PhD in Mathematics from Thapar Institute of Engineering and Technology, India.\\\\
+Q4. Generic question about the scientific calculator, can you share your past experience of using a scientific calculator?\\
+Nothing special, but one thing that I found useful about scientific calculator is use of brackets, using brackets I was used to solve complex fractions carrying several numerical values.\\\\
+Q5. Have you ever dealt with irrational numbers may be in your school, university or work? If yes, can you share any particular concept or project where you used them?\\
+As I am PhD in Mathematics, so irrational number are quite familiar to me. One thing that first fascinated me about irrational is the proof that Sqrt{2} is irration which I read in Rudin's book.\\\\
+Q6. Have you used natural logarithms in any of your previous work or as a school project? If yes, can you share any particular concept or project where you used them?\\
+As I already told I am PhD in mathematics so logarithm was part of daily routine.\\\\
+Q7. How will you describe the frequency of your usage of natural logarithm?
+\begin{itemize}
+\item[\radiobutton] Rarely used
+\item[\radiobutton*] Frequently used
+\item[\radiobutton] Somewhat in between Rare and Frequent Usage
+\end{itemize}
+Q8. Can you illustrate an example which can demonstrate the fact that using a natural logarithm is helpful- Any real-world application?\\
+Any physical model which involves exponential equation of any sort will definitely lead to application of logarithms.\\\\
+Q9. How do you prefer solving an equation involving a natural logarithm?
+\begin{itemize}
+\item[\radiobutton*] Using a Scientific Calculator
+\item[\radiobutton] Manually
+\item[\radiobutton] Both
+\end{itemize}
+Q10. Any challenges you faced while using this number i.e. Natural logarithm with or without a calculator?\\
+Hardly.\\\\
+Q11. Have you used the natural logarithm of 2 in any of your previous work or as a school project? If yes, can you share any particular concept or project where you used them?\\
+Yes\\\\
+Q12. How will you describe the frequency of your usage of the natural logarithm of 2- rarely used or frequently used?\\
+\begin{itemize}
+\item[\radiobutton] Rarely used
+\item[\radiobutton] Frequently used
+\item[\radiobutton*] Somewhat in between Rare and Frequent Usage
+\end{itemize}
+Q13. Can you illustrate an example for me which can demonstrate the fact that using a natural logarithm of 2 is helpful- Any real-world application?\\
+In computing compound interest the use of natural logrithm is very prevalent.\\\\
+Q14. When you use the natural logarithm of a number do you round off the digits and if so how many decimal places do you prefer rounding off the result? \\
+2 decimal places\\\\
+Q15. Any feature, one or more, you feel that should be there in the scientific calculator to make it easier for the user to perform complex mathematical equation easily using a natural logarithm of 2?\\
+The features in scientific calculators are already self explaining.\\\\
+Q16.Any challenges you faced while using this number i.e. Natural logarithm of 2 with or without a calculator?\\
+No.
+\subsection{Interview 3}
+Q1. Your Name -  Nileesha Fernando\\
+Q2. What do you do in your daily life?\\
+Student and working part time as Full Stack PHP intern at PlanetRate,Montreal\\\\ 
+Q3. What is your highest Qualification?\\
+Pursuing Master of Software Engineering at Concordia University,Montreal\\\\
+Q4. Generic question about the scientific calculator, can you share your past experience of using a scientific calculator?\\
+I have used the calculator for educational purposes. In my mathematics and physics classes, it was vital to use the scientific calculator during lab ex-experiments to perform data analysis. I used the Casio S-V P.A.M calculator and sometimes I used online scientific calculators to perform more complex scientific equations. The main drawback with my current scientific calculator is that it cannot perform complex functionality in a simple manner.
+Also i don't see any options to view my previous history of a particular session on my calculator.\\\\
+Q5. Have you ever dealt with irrational numbers may be in your school, university or work? If yes, can you share any particular concept or project where you used them?\\
+Yes, in my undergraduate courses - physics and math.\\\\
+Q6. Have you used natural logarithms in any of your previous work or as a school project? If yes, can you share any particular concept or project where you used them?\\
+I have used natural logarithms in my undergraduate course like - Physics,Math,Machine Learning , Artificial intelligence,Statistics.Also i took Algorithm Design Techniques in my masters. Since all these course involve computing complex equation hence i have used natural logarithm many times. Not only this , in some hard to solve problems the use of natural logarithm made it easier for me to compute them.\\\\
+Q7. How will you describe the frequency of your usage of natural logarithm?
+\begin{itemize}
+\item[\radiobutton] Rarely used
+\item[\radiobutton] Frequently used
+\item[\radiobutton*] Somewhat in between Rare and Frequent Usage
+\end{itemize}
+Q8. Can you illustrate an example which can demonstrate the fact that using a natural logarithm is helpful- Any real-world application?\\
+I remember solving problems that involved exponential term ,in my math and algorithm design courses, using natural logarithm manually. In the real world application i can say they can be useful in computing complexity of an algorithm.\\\\
+Q9. How do you prefer solving an equation involving a natural logarithm? 
+\begin{itemize}
+\item[\radiobutton*] Using a Scientific Calculator
+\item[\radiobutton] Manually
+\item[\radiobutton] Both
+\end{itemize}
+Q10. Any challenges you faced while using this number i.e. Natural logarithm with or without a calculator?\\
+None but for your school project you can add a feature of computing natural logarithm properties such as Quotient Rule,Power Rule,Product Rule on $ln_{e}(2)$ and Inverse Function of $ln_{e}(2)$. Additionally you can add the facility of Basic Arithmetic Operation on $ln_{e}(2)$. A calculator that can directly apply the formulas will be beneficial for us student during the examination as we can save time.\\\\
+Q11. Have you used the natural logarithm of 2 in any of your previous work or as a school project? If yes, can you share any particular concept or project where you used them?\\
+Not used\\\\
+Q12. How will you describe the frequency of your usage of the natural logarithm of 2- rarely used or frequently used?\\
+\begin{itemize}
+\item[\radiobutton*] Rarely used
+\item[\radiobutton] Frequently used
+\item[\radiobutton] Somewhat in between Rare and Frequent Usage
+\end{itemize}
+Q13. Can you illustrate an example for me which can demonstrate the fact that using a natural logarithm of 2 is helpful- Any real-world application?\\
+Never really used this number in particular but it was a part of complex equation i will compute its value using a scientific calculator.\\\\
+Q14. When you use the natural logarithm of a number do you round off the digits and if so how many decimal places do you prefer rounding off the result? \\
+3\\\\
+Q15. Any feature, one or more, you feel that should be there in the scientific calculator to make it easier for the user to perform complex mathematical equation easily using a natural logarithm of 2?\\
+None related to natural logarithm\\\\
+Q16.Any challenges you faced while using this number i.e. Natural logarithm of 2 with or without a calculator?\\
+None\\
+\subsection{Interview 4}
+Q1. Your Name -  Marc Anthony\\\\
+Q2. What do you do in your daily life?\\
+Chemist at Analytical Chemist\\\\
+Q3. What is your highest Qualification?\\
+Master in philosophy.\\\\
+Q4. Generic question about the scientific calculator, can you share your past experience of using a scientific calculator?\\
+Well, i use it on a daily basis to generate various report after analysis of a new drug.\\\\
+Q5. Have you ever dealt with irrational numbers may be in your school, university or work? If yes, can you share any particular concept or project where you used them?\\
+Yes, but nothing in particular i can remember at the moment.\\\\
+Q6. Have you used natural logarithms in any of your previous work or as a school project? If yes, can you share any particular concept or project where you used them?\\
+Yes, i used it often to analyze the result of a research.\\\
+Q7. How will you describe the frequency of your usage of natural logarithm?
+\begin{itemize}
+\item[\radiobutton] Rarely used
+\item[\radiobutton*] Frequently used
+\item[\radiobutton] Somewhat in between Rare and Frequent Usage
+\end{itemize}
+Q8. Can you illustrate an example which can demonstrate the fact that using a natural logarithm is helpful- Any real-world application?\\
+A special case where i find the natural logarithm concept useful is finding the time by which a substance will complete its half life using natural logarithm of 2.\\\\
+Q9. How do you prefer solving an equation involving a natural logarithm?
+\begin{itemize}
+\item[\radiobutton*] Using a Scientific Calculator
+\item[\radiobutton] Manually
+\item[\radiobutton] Both
+\end{itemize}
+Q10. Any challenges you faced while using this number i.e. Natural logarithm with or without a calculator?\\
+None.\\\\
+Q11. Have you used the natural logarithm of 2 in any of your previous work or as a school project? If yes, can you share any particular concept or project where you used them?\\
+Yes, an example that i mentioned previously that it is useful in finding Half Life of a substance.\\\\
+Q12. How will you describe the frequency of your usage of the natural logarithm of 2- rarely used or frequently used?\\
+\begin{itemize}
+\item[\radiobutton] Rarely used
+\item[\radiobutton] Frequently used
+\item[\radiobutton*] Somewhat in between Rare and Frequent Usage
+\end{itemize}
+Q13. Can you illustrate an example for me which can demonstrate the fact that using a natural logarithm of 2 is helpful- Any real-world application?\\
+In comuting Half Life of substance. Here the substance can be a carbon atom.\\\\
+Q14. When you use the natural logarithm of a number do you round off the digits and if so how many decimal places do you prefer rounding off the result? \\
+3 decimal places\\\\
+Q15. Any feature, one or more, you feel that should be there in the scientific calculator to make it easier for the user to perform complex mathematical equation easily using a natural logarithm of 2?\\
+Finding Half Life of a substance can be added to your calculator - so that i quickly perform my computation put entering two values i.e. initial amount and rate of decay annually.This will really help when i am finding the half life of large number of substances.\\\\
+Q16.Any challenges you faced while using this number i.e. Natural logarithm of 2 with or without a calculator?\\
+None.
+\subsection{Rationale for selecting the three interviewees}
+\subsubsection{Reason for choosing Ms. Vino Shankar as interviewee:}
+She is a Data Scientist and her job profile demands from her to apply  analytic skills , knowledge of statistics and programming to fetch data and then analyze it and find interesting pattern out of a large data set. 
+This suggests that she is dealing with complex mathematical equation at work.
+\subsubsection{Reason for choosing Mr. Manjit as interviewee :}
+Mr. Manjit is Mathematics professor,holding a Phd from one of the renowned university in India - Thapar Institute of Engineering and Technology.
+By interviewing him i was able to collect knowledge from a mathematician.
+
+\subsubsection{Reason for choosing Ms. Nileesha Fernando as interview:}
+She is a currently per suing her masters degree(Master of Software Engineering) at Concordia University and has successfully completed course - Software Requirement Specification in fall 2018 under professor - Abdelwahab Elnaka with a grade : A+. Additionally, as a side project she created a calculator application using : JavaScript,HTML,CSS.
+She was able to provide me with the information about the relevance of natural logarithm of 2 in student community of Computer Science/Software Engineering.
+
+\subsubsection{Reason for choosing Mr. Marc Anthony as interviewee:}
+He is a surogate user i.e. a prototype that is being created after introspection about the benefits this calculator can prove in real life problem.
+\subsection{Analysis of interview :}
+
+Please note: For the reasons of adding more use cases i have created a user- Marc Anthony that is a prototype.
+Additional as Nileesha Fernando didnt share any goals related to the Enternity:Numbers so i am changing her profile to be a surogate user for the same reasons mentioned above.Therefore in this project i will be having 2 real users and 2 surrogate users of Enternity:Numbers.All interviewees have used the scientific calculator a lot in computing complex mathematical equations.
+For the use of irrational number s it is interesting to note that irrational number are not being used by  data-scientist professionals in their day to day work.Regarding the use of natural logarithm all of them have used it extensively i.e. they pointed out its usage in plotting a large data after computing the natural log of the value, in computing complexity of algorithm and any physical model that has an exponential term in it and computing half life of a substance. All the three of them prefer using a scientific calculator to calculate the value of natural logarithm.
+ None them have dealt with natural logarithm of 2 related problems in particular however Mr. Manjit,mathematician, mentioned about the real world application of this number that it can used to compute compound interest and Marc mentioned about its use in finding Half Life. They usually prefer rounding off the natural logarithm value to 2 to 3 decimal places when using it in an mathematical equation.It was also noted that none of them feel a need of a change that is required in the scientific calculator for computing natural logarithm of number.However suggested a few features that can be used in Enternity:Numbers.
+\section{Problem3 : Persona}
+\begin{table}[H]
+ 			\centering
+\begin{tabular}{p{1.65in}p{4.45in}}
+\hline
+%row no:1
+\multicolumn{1}{|p{1.65in}}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Photo}} \par {\fontsize{10pt}{12.0pt}\selectfont \textbf{\ \ \ \ \   }} \par 
+	\begin{Center}
+		\includegraphics[width=1.65in,height=1.36in]{./manjit.png}
+	\end{Center}
+} & 
+\multicolumn{1}{|p{4.45in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Personal Information}} \par \begin{itemize}
+	\item {\fontsize{10pt}{12.0pt}\selectfont Name : Manjit} \par 	\item {\fontsize{10pt}{12.0pt}\selectfont Job Title : Assistant Professor of Mathematics} \par 	\item {\fontsize{10pt}{12.0pt}\selectfont Age : 55} \par 	\item {\fontsize{10pt}{12.0pt}\selectfont University : Punjabi University Patiala} \par 	\item {\fontsize{10pt}{12.0pt}\selectfont Email :mjt@gmail.com} \par 	\item {\fontsize{10pt}{12.0pt}\selectfont Location : Punjab, India} \par 	\item {\fontsize{10pt}{12.0pt}\selectfont Highest Level of Education: PhD in Mathematics, Thapar Institute of Engineering and Technology, India.}
+\end{itemize} \par } \\
+\hhline{--}
+%row no:2
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Skills}} \par \begin{itemize}
+	\item {\fontsize{10pt}{12.0pt}\selectfont \textbf{Mathematician – }Phd in Lie Group Analysis Partial Differential Equations, Painleve Analysis, Conservation Laws}
+\end{itemize} \par } \\
+\hhline{--}
+%row no:3
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Experience}} \par \begin{itemize}
+	\item {\fontsize{10pt}{12.0pt}\selectfont Assistance Professor of Mathematics at Punjabi University Patiala, Punjab,India}
+\end{itemize} \par } \\
+\hhline{--}
+%row no:4
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{User requirements}} \par {\fontsize{10pt}{12.0pt}\selectfont None mentioned in regards to the project - Eternity: Numbers.} \par {\fontsize{10pt}{12.0pt}\selectfont He thinks that using the scientific calculator for computing natural logarithm is easy.} \par {\fontsize{10pt}{12.0pt}\selectfont However mentioned about the relevance of natural logarithm of 2 in calculating compound interest.} \par } \\
+\hhline{--}
+%row no:5
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Goals}} \par {\fontsize{10pt}{12.0pt}\selectfont Computing compound interest annually and continuously using natural logarithm of (2) quickly, using the Rule72.} \par } \\
+\hhline{--}
+
+\end{tabular}
+ \end{table}
+\begin{table}[H]
+ 			\centering
+\begin{tabular}{p{1.86in}p{4.23in}}
+\hline
+%row no:1
+\multicolumn{1}{|p{1.86in}}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Photo}} \par {\fontsize{10pt}{12.0pt}\selectfont \textbf{\ \ \ \ \   }} \par 
+	\begin{Center}
+		\includegraphics[width=1.86in,height=1.59in]{./vino.png}
+	\end{Center}
+} & 
+\multicolumn{1}{|p{4.23in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Personal Information}} \par \begin{itemize}
+	\item {\fontsize{10pt}{12.0pt}\selectfont Name : Vino Shankar} \par 	\item {\fontsize{10pt}{12.0pt}\selectfont Job Title : Data Scientist} \par 	\item {\fontsize{10pt}{12.0pt}\selectfont Age : 32} \par 	\item {\fontsize{10pt}{12.0pt}\selectfont Email:Vino@gmail.com} \par 	\item {\fontsize{10pt}{12.0pt}\selectfont Location: Toronto, Ontario, Canada} \par 	\item {\fontsize{10pt}{12.0pt}\selectfont Highest Level of Education: Doctorate} \par 	\item {\fontsize{10pt}{12.0pt}\selectfont University : University of Birmingham, UK}
+\end{itemize} \par } \\
+\hhline{--}
+%row no:2
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Skills}} \par \begin{itemize}
+	\item {\fontsize{10pt}{12.0pt}\selectfont Astrophysics}
+\end{itemize} \par } \\
+\hhline{--}
+%row no:3
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Experience}} \par \begin{itemize}
+	\item {\fontsize{10pt}{12.0pt}\selectfont Pattern Recognition} \par 	\item {\fontsize{10pt}{12.0pt}\selectfont Data Mining}
+\end{itemize} \par } \\
+\hhline{--}
+%row no:4
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{User requirements}} \par {\fontsize{10pt}{12.0pt}\selectfont None mentioned in regards to the project - Eternity: Numbers. } \par {\fontsize{10pt}{12.0pt}\selectfont She feels that using the scientific calculator to compute natural logarithm of number is easy.} \par } \\
+\hhline{--}
+%row no:5
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Goals}} \par {\fontsize{10pt}{12.0pt}\selectfont User seems very satisfied with scientific calculator she is using at work for solving complex mathematical equation involving natural logarithm of 2. However she mentions about the rounding off the result upto 2 decimal place for any computation that involves natural logarithm of a number.} \par } \\
+\hhline{--}
+
+\end{tabular}
+ \end{table}
+\begin{table}[H]
+ 			\centering
+\begin{tabular}{p{1.86in}p{4.23in}}
+\hline
+%row no:1
+\multicolumn{1}{|p{1.86in}}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Photo}} \par {\fontsize{10pt}{12.0pt}\selectfont \textbf{\ \ \ \ \   }} \par 
+	\begin{Center}
+		\includegraphics[width=1.86in,height=1.6in]{./nileesha.png}
+	\end{Center}
+} & 
+\multicolumn{1}{|p{4.23in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Personal Information}} \par \begin{itemize}
+	\item {\fontsize{10pt}{12.0pt}\selectfont Name : Nileesha Fernando} \par 	\item {\fontsize{10pt}{12.0pt}\selectfont Job Title : Student } \par 	\item {\fontsize{10pt}{12.0pt}\selectfont Age :25} \par 	\item {\fontsize{10pt}{12.0pt}\selectfont University: Concordia University} \par 	\item {\fontsize{10pt}{12.0pt}\selectfont Email: nfernado@gmail.com} \par 	\item {\fontsize{10pt}{12.0pt}\selectfont Location: Montreal, QC, Canada} \par 	\item {\fontsize{10pt}{12.0pt}\selectfont Highest Level of Education: Pursuing Master of Software Engineering}
+\end{itemize} \par } \\
+\hhline{--}
+%row no:2
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Skills}} \par {\fontsize{10pt}{12.0pt}\selectfont \textbf{\ \ \  }} \par {\fontsize{10pt}{12.0pt}\selectfont \ \ \ \  Full Stack PHP intern at Planet Rate, Montreal. Her part-time internship requires her to design efficient algorithm for company’s new feature using technologies such as} \par \begin{itemize}
+	\item {\fontsize{10pt}{12.0pt}\selectfont PHP} \par 	\item {\fontsize{10pt}{12.0pt}\selectfont HTML} \par 	\item {\fontsize{10pt}{12.0pt}\selectfont CSS} \par 	\item {\fontsize{10pt}{12.0pt}\selectfont Node\  JS} \par 	\item {\fontsize{10pt}{12.0pt}\selectfont MySQL}
+\end{itemize} \par } \\
+\hhline{--}
+%row no:3
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Experience}} \par \begin{itemize}
+	\item {\fontsize{10pt}{12.0pt}\selectfont Student – Completed course Algorithm Design Technics and Aritificial\ intelligence  } \par 	\item {\fontsize{10pt}{12.0pt}\selectfont Full Stack Php intern (Web Developer)}
+\end{itemize}} \\
+\hhline{--}
+%row no:4
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{User requirements}} \par {\fontsize{10pt}{12.0pt}\selectfont Regarding Eternity:Numbers she mentioned a few features i.e. save history of a session,calculating the natural logartithm properties on $ln_{2}$, computing the inverse function of $ln_{e}2$ and perfoming basic arithematic operation on the  $ln_{e}2$ . } {\fontsize{10pt}{12.0pt}\selectfont Despite the suggested feature she feels that using the scientific calculator to compute natural logarithm of any number is easy.} \par } \\
+\hhline{--}
+%row no:5
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Goals}} \par {\fontsize{10pt}{12.0pt}\selectfont Although user seems very satisfied with scientific calculator she is using to solving complex mathematical equation involving natural logarithm of 2. However still feel that the suggested features, if are made available it will really help students solve equations faster which can be beneficial during examinations.} \par } \\
+\hhline{--}
+
+\end{tabular}
+ \end{table}
+\begin{table}[H]
+ 			\centering
+\begin{tabular}{p{1.65in}p{4.45in}}
+\hline
+%row no:1
+\multicolumn{1}{|p{1.65in}}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Photo}} \par {\fontsize{10pt}{12.0pt}\selectfont \textbf{\ \ \ \ \   }} \par 
+	\begin{Center}
+		\includegraphics[width=1.65in,height=1.57in]{./marc.JPG}
+	\end{Center}
+} & 
+\multicolumn{1}{|p{4.45in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Personal Information}} \par \begin{itemize}
+	\item {\fontsize{10pt}{12.0pt}\selectfont Name : Marc Anthony} \par 	\item {\fontsize{10pt}{12.0pt}\selectfont Job Title : Chemist} \par 	\item {\fontsize{10pt}{12.0pt}\selectfont Age : 30} \par 	\item {\fontsize{10pt}{12.0pt}\selectfont University : McGill University,Montreal,Canada} \par 	\item {\fontsize{10pt}{12.0pt}\selectfont Email :marc@gmail.com} \par 	\item {\fontsize{10pt}{12.0pt}\selectfont Location : Montreal,Canada} \par 	\item {\fontsize{10pt}{12.0pt}\selectfont Highest Level of Education: Master in philosophy}
+\end{itemize} \par } \\
+\hhline{--}
+%row no:2
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Skills}} \par \begin{itemize}
+	\item {\fontsize{10pt}{12.0pt}\selectfont Good Team player.} \par 	\item {\fontsize{10pt}{12.0pt}\selectfont Analytical Thinking} \par 	\item {\fontsize{10pt}{12.0pt}\selectfont Good knowledge of Probability and Statistics}
+\end{itemize} \par } \\
+\hhline{--}
+%row no:3
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Experience}} \par \begin{itemize}
+	\item {\fontsize{10pt}{12.0pt}\selectfont Chemist at Analytical Chemist}
+\end{itemize} \par } \\
+\hhline{--}
+%row no:4
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{User requirements}} \par {\fontsize{10pt}{12.0pt}\selectfont Add a feature to compute Half Life a substance to Enternity:Numbers.} \par } \\
+\hhline{--}
+%row no:5
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Goals}} \par {\fontsize{10pt}{12.0pt}\selectfont Have a scientific calculator that can compute the half-life of a substance by providing the initial amount (in grams) and rate of decay annually.} \par } \\
+\hhline{--}
+
+\end{tabular}
+ \end{table}
+ 
+\section{Problem4 : UML Diagram to represent Problem Domain Model}
+	\includegraphics[width=6.5in,height=8in]{./Problem4_UML.png}
+\section{Problem5 : UML to model Use Cases}
+\subsection{UML Case Diagram}
+\includegraphics[width=6.5in,height=8in]{./Problem5_UML_UseCase.png}
+\begin{table}[H]
+ 			\centering
+\begin{tabular}{p{0.96in}p{5.06in}}
+\hline
+%row no:1
+\multicolumn{1}{|p{0.96in}}{\textbf{Identifier}} & 
+\multicolumn{1}{|p{5.06in}|}{\textbf{Use Cases}} \\
+\hhline{--}
+%row no:2
+\multicolumn{1}{|p{0.96in}}{UC1} & 
+\multicolumn{1}{|p{5.06in}|}{Calculate natural logarithm of 2} \\
+\hhline{--}
+%row no:3
+\multicolumn{1}{|p{0.96in}}{UC2} & 
+\multicolumn{1}{|p{5.06in}|}{Calculate compound interest using $ln_{e}2$  - compounded annually} \\
+\hhline{--}
+%row no:4
+\multicolumn{1}{|p{0.96in}}{UC3} & 
+\multicolumn{1}{|p{5.06in}|}{Calculate compute interest using $ln_{e}2$  - compounded continuously.} \\
+\hhline{--}
+%row no:5
+\multicolumn{1}{|p{0.96in}}{UC4} & 
+\multicolumn{1}{|p{5.06in}|}{Compute Half-Life of a Substance} \\
+\hhline{--}
+%row no:6
+\multicolumn{1}{|p{0.96in}}{UC5} & 
+\multicolumn{1}{|p{5.06in}|}{Compute Inverse Function of $ln_{e}2$ } \\
+\hhline{--}
+%row no:7
+\multicolumn{1}{|p{0.96in}}{UC6} & 
+\multicolumn{1}{|p{5.06in}|}{Compute Basic Arithmetic Operation of a number with $ln_{e}2$ } \\
+\hhline{--}
+%row no:8
+\multicolumn{1}{|p{0.96in}}{UC7} & 
+\multicolumn{1}{|p{5.06in}|}{Save history session} \\
+\hhline{--}
+%row no:9
+\multicolumn{1}{|p{0.96in}}{UC8} & 
+\multicolumn{1}{|p{5.06in}|}{Computing the result upto a precision of 2 or 3 decimal places.} \\
+\hhline{--}
+%row no:10
+\multicolumn{1}{|p{0.96in}}{UC9} & 
+\multicolumn{1}{|p{5.06in}|}{Validating User Input.} \\
+\hhline{--}
+%row no:11
+\multicolumn{1}{|p{0.96in}}{UC10} & 
+\multicolumn{1}{|p{5.06in}|}{Display Math Error.} \\
+\hhline{--}
+%row no:12
+\multicolumn{1}{|p{0.96in}}{UC11} & 
+\multicolumn{1}{|p{5.06in}|}{Fetching Session History} \\
+\hhline{--}
+%row no:13
+\multicolumn{1}{|p{0.96in}}{UC12} & 
+\multicolumn{1}{|p{5.06in}|}{Perform Operation} \\
+\hhline{--}
+%row no:14
+\multicolumn{1}{|p{0.96in}}{UC13} & 
+\multicolumn{1}{|p{5.06in}|}{Compute Natural Logarithm Properties on $ln_{e}2$ and natural logarithm of a number} \\
+\hhline{--}
+
+
+\end{tabular}
+ \end{table}
+\subsection{UML Activity Diagram}
+\includegraphics[width=6.5in,height=8in]{./Problem5_UML_Activity.png}
+\section{Problem6 : User Stories}
+User Stories are written from the perspective of the users.\\
+Priority : MOSCOW -- explain a little here ???\\
+Estimate : For estimating I am using Fibonacci Sequence and the unit of estimate is Story Point.A story point describes the effort needed to complete a user story.
+These story points does not necessarily have direct relationship with the time in hours or minute or seconds.
+Its just a relative measure of scale between different user stories.
+\subsection{User Stories by users - Global}
+\begin{table}[H]
+ 			\centering
+\begin{tabular}{p{1.65in}p{4.45in}}
+\hhline{--}
+%row no:1
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Identifier:}} \par 
+G-US1
+\par } \\
+\hhline{--}
+%row no:2
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{User Story Statement}} \par 
+A customer can view the result on a User Interface so that they can see the result of the computed value after execution of an operation.
+\par } \\
+\hhline{--}
+%row no:3
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Constraints}} \par 
+None
+\par } \\
+\hhline{--}
+%row no:4
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Acceptance Test}} \par 
+\begin{table}[H]
+ 			\centering
+\begin{tabular}{p{1.36in}p{1.36in}p{1.36in}p{1.36in}}
+\hline
+%row no:1
+\multicolumn{1}{|p{1.36in}}{Identifier} & 
+\multicolumn{1}{|p{1.36in}}{Given} & 
+\multicolumn{1}{|p{1.36in}}{When} & 
+\multicolumn{1}{|p{1.36in}|}{Then} \\
+\hhline{----}
+%row no:2
+\multicolumn{1}{|p{1.36in}}{T\_G-US1\_1} & 
+\multicolumn{1}{|p{1.36in}}{Constraint is met – if any.} & 
+\multicolumn{1}{|p{1.36in}}{User Performs operation :  \par Ln2 + 2} & 
+\multicolumn{1}{|p{1.36in}|}{Display Result upto 2 decimal places = 2.69 \par AND \par Display Result upto 3 decimal places=2.693 \par AND \par Save the result and user operation locally.} \\
+\hhline{----}
+%row no:3
+\multicolumn{1}{|p{1.36in}}{T\_G-US1\_2} & 
+\multicolumn{1}{|p{1.36in}}{Constraint is met – if any.} & 
+\multicolumn{1}{|p{1.36in}}{User Performs operation :  \par Ln(-3/2)} & 
+\multicolumn{1}{|p{1.36in}|}{Display Math Error AND  \par Save the result locally. } \\
+\hhline{----}
+
+\end{tabular}
+ \end{table}
+ \par } \\
+\hhline{--}
+%row no:5
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Priority}} \par {\fontsize{10pt}{12.0pt}\selectfont 1.} \par } \\
+\hhline{--}
+%row no:6
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Estimate :}} \par {\fontsize{10pt}{12.0pt}\selectfont 10.} \par } \\
+\hhline{--}
+
+\end{tabular}
+ \end{table}
+\begin{table}[H]
+ 			\centering
+\begin{tabular}{p{1.65in}p{4.45in}}
+\hhline{--}
+%row no:1
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Identifier:}} \par 
+G-US2
+\par } \\
+\hhline{--}
+%row no:2
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{User Story Statement}} \par 
+A customer can get the result upto a certain precision i.e either 2 decimal places or 3 decimal places so that they dont have to perform rounding off of a result manually(mentally).
+\par } \\
+\hhline{--}
+%row no:3
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Constraints}} \par
+Results should not be a math Error
+\par } \\
+\hhline{--}
+%row no:4
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Acceptance Test}} \par 
+\begin{table}[H]
+ 			\centering
+\begin{tabular}{p{1.36in}p{1.36in}p{1.36in}p{1.36in}}
+\hline
+%row no:1
+\multicolumn{1}{|p{1.36in}}{Identifier} & 
+\multicolumn{1}{|p{1.36in}}{Given} & 
+\multicolumn{1}{|p{1.36in}}{When} & 
+\multicolumn{1}{|p{1.36in}|}{Then} \\
+\hhline{----}
+%row no:2
+\multicolumn{1}{|p{1.36in}}{T\_G-US2\_1} & 
+\multicolumn{1}{|p{1.36in}}{Constraint is met – if any.} & 
+\multicolumn{1}{|p{1.36in}}{User Performs operation :  \par Ln(2 $\ast$  6)} & 
+\multicolumn{1}{|p{1.36in}|}{\cellcolor[HTML]{FFFFFF}Display Result upto 2 decimal places = {\fontsize{14pt}{16.8pt}\selectfont 2.48} \par AND \par Display Result upto 3 decimal places=2.485 \par AND \par Save the result and user operation locally.} \\
+\hhline{----}
+%row no:3
+\multicolumn{1}{|p{1.36in}}{T\_G-US2\_2} & 
+\multicolumn{1}{|p{1.36in}}{Constraint is met – if any.} & 
+\multicolumn{1}{|p{1.50in}}{User Performs operation :  \par InverseFunction($ln_{e}2$)} & 
+\multicolumn{1}{|p{1.36in}|}{\cellcolor[HTML]{FFFFFF}Display Result upto 2 decimal places = {\fontsize{14pt}{16.8pt}\selectfont 7.39} \par AND \par Display Result upto 3 decimal places=7.389 \par AND \par Save the result and user operation locally.} \\
+\hhline{----}
+
+\end{tabular}
+ \end{table}
+
+ \par } \\
+\hhline{--}
+%row no:5
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Priority}} \par {\fontsize{10pt}{12.0pt}\selectfont 1.} \par } \\
+\hhline{--}
+%row no:6
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Estimate :}} \par {\fontsize{10pt}{12.0pt}\selectfont 10.} \par } \\
+\hhline{--}
+
+\end{tabular}
+ \end{table}
+\begin{table}[H]
+ 			\centering
+\begin{tabular}{p{1.65in}p{4.45in}}
+\hhline{--}
+%row no:1
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Identifier:}} \par 
+G-US3
+\par } \\
+\hhline{--}
+%row no:2
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{User Story Statement:}} \par
+A customer can get the value of $ln_{e}2$ so that they can use this result in their work.
+\par } \\
+\hhline{--}
+%row no:3
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Constraints}} \par 
+None
+\par } \\
+\hhline{--}
+%row no:4
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Acceptance Test}} \par 
+\begin{table}[H]
+ 			\centering
+\begin{tabular}{p{1.36in}p{1.36in}p{1.36in}p{1.36in}}
+\hline
+%row no:1
+\multicolumn{1}{|p{1.36in}}{Identifier} & 
+\multicolumn{1}{|p{1.36in}}{Given} & 
+\multicolumn{1}{|p{1.36in}}{When} & 
+\multicolumn{1}{|p{1.36in}|}{Then} \\
+\hhline{----}
+%row no:2
+\multicolumn{1}{|p{1.36in}}{T\_G-US3\_1} & 
+\multicolumn{1}{|p{1.36in}}{Constraint is met – if any.} & 
+\multicolumn{1}{|p{1.36in}}{User Performs operation :  \par Ln(2)} & 
+\multicolumn{1}{|p{1.36in}|}{\cellcolor[HTML]{FFFFFF}Display Result upto 2 decimal places = {\fontsize{14pt}{16.8pt}\selectfont 0.69} \par AND \par Display Result upto 3 decimal places={\fontsize{14pt}{16.8pt}\selectfont 0.693} \par AND \par Save the result and user operation locally.} \\
+\hhline{----}
+
+\end{tabular}
+ \end{table}
+ \par } \\
+\hhline{--}
+%row no:5
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Priority}} \par {\fontsize{10pt}{12.0pt}\selectfont 1.} \par } \\
+\hhline{--}
+%row no:6
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Estimate :}} \par {\fontsize{10pt}{12.0pt}\selectfont 10.} \par } \\
+\hhline{--}
+
+\end{tabular}
+ \end{table}
+\begin{table}[H]
+ 			\centering
+\begin{tabular}{p{1.65in}p{4.45in}}
+\hhline{--}
+%row no:1
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Identifier:}} \par 
+G-US4
+\par } \\
+\hhline{--}
+%row no:2
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{User Story Statement:}} \par
+A customer can perform basic arithmetic operation - addition of two numbers so that they can use this result in their work.
+\par } \\
+\hhline{--}
+%row no:3
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Constraints}} \par
+None
+\par } \\
+\hhline{--}
+%row no:4
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Acceptance Test}} \par 
+\begin{table}[H]
+ 			\centering
+\begin{tabular}{p{1.36in}p{1.36in}p{1.36in}p{1.36in}}
+\hline
+%row no:1
+\multicolumn{1}{|p{1.36in}}{Identifier} & 
+\multicolumn{1}{|p{1.36in}}{Given} & 
+\multicolumn{1}{|p{1.36in}}{When} & 
+\multicolumn{1}{|p{1.36in}|}{Then} \\
+\hhline{----}
+%row no:2
+\multicolumn{1}{|p{1.36in}}{T\_G-US4\_1} & 
+\multicolumn{1}{|p{1.36in}}{Constraint is met – if any.} & 
+\multicolumn{1}{|p{1.36in}}{User Performs operation :  \par 2+.2} & 
+\multicolumn{1}{|p{1.36in}|}{\cellcolor[HTML]{FFFFFF}Display Result upto 2 decimal places = {\fontsize{14pt}{16.8pt}\selectfont 2.20} \par AND \par Display Result upto 3 decimal places={\fontsize{14pt}{16.8pt}\selectfont 2.200} \par AND \par Save the result and user operation locally.} \\
+\hhline{----}
+%row no:3
+\multicolumn{1}{|p{1.36in}}{T\_G-US4\_2} & 
+\multicolumn{1}{|p{1.36in}}{Constraint is met – if any.} & 
+\multicolumn{1}{|p{1.36in}}{User Performs Operation :  \par 0.01+0.0008} & 
+\multicolumn{1}{|p{1.36in}|}{\cellcolor[HTML]{FFFFFF}Display Result upto 2 decimal places = {\fontsize{14pt}{16.8pt}\selectfont 0.01} \par AND \par Display Result upto 3 decimal places={\fontsize{14pt}{16.8pt}\selectfont  0.011} \par AND \par Save the result and user operation locally.} \\
+\hhline{----}
+
+\end{tabular}
+ \end{table}
+\par } \\
+\hhline{--}
+%row no:5
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Priority}} \par {\fontsize{10pt}{12.0pt}\selectfont 1.} \par } \\
+\hhline{--}
+%row no:6
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Estimate :}} \par {\fontsize{10pt}{12.0pt}\selectfont 10.} \par } \\
+\hhline{--}
+
+\end{tabular}
+ \end{table}
+\begin{table}[H]
+ 			\centering
+\begin{tabular}{p{1.65in}p{4.45in}}
+\hhline{--}
+%row no:1
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Identifier:}} \par 
+G-US5
+\par } \\
+\hhline{--}
+%row no:2
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{User Story Statement:}} \par
+A customer can perform basic arithmetic operation- subtraction of two numbers so that they can use this result in their work.
+\par } \\
+\hhline{--}
+%row no:3
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Constraints}} \par
+None
+\par } \\
+\hhline{--}
+%row no:4
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Acceptance Test}} \par 
+\begin{table}[H]
+ 			\centering
+\begin{tabular}{p{1.36in}p{1.36in}p{1.36in}p{1.36in}}
+\hline
+%row no:1
+\multicolumn{1}{|p{1.36in}}{Identifier} & 
+\multicolumn{1}{|p{1.36in}}{Given} & 
+\multicolumn{1}{|p{1.36in}}{When} & 
+\multicolumn{1}{|p{1.36in}|}{Then} \\
+\hhline{----}
+%row no:2
+\multicolumn{1}{|p{1.36in}}{T\_G-US5\_1} & 
+\multicolumn{1}{|p{1.36in}}{Constraint is met – if any.} & 
+\multicolumn{1}{|p{1.36in}}{User Performs operation :  \par -0.2-0.31} & 
+\multicolumn{1}{|p{1.36in}|}{\cellcolor[HTML]{FFFFFF}Display Result upto 2 decimal places = - {\fontsize{14pt}{16.8pt}\selectfont 0.51} \par AND \par Display Result upto 3 decimal places= - {\fontsize{14pt}{16.8pt}\selectfont 0.510} \par AND \par Save the result and user operation locally.} \\
+\hhline{----}
+%row no:3
+\multicolumn{1}{|p{1.36in}}{T\_G-US5\_2} & 
+\multicolumn{1}{|p{1.36in}}{Constraint is met – if any.} & 
+\multicolumn{1}{|p{1.36in}}{User Performs Operation :  \par 5-0.69} & 
+\multicolumn{1}{|p{1.36in}|}{\cellcolor[HTML]{FFFFFF}Display Result upto 2 decimal places = {\fontsize{14pt}{16.8pt}\selectfont 4.31} \par AND \par Display Result upto 3 decimal places={\fontsize{14pt}{16.8pt}\selectfont  4.310} \par AND \par Save the result and user operation locally.} \\
+\hhline{----}
+
+\end{tabular}
+ \end{table}
+\par } \\
+\hhline{--}
+%row no:5
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Priority}} \par {\fontsize{10pt}{12.0pt}\selectfont 1.} \par } \\
+\hhline{--}
+%row no:6
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Estimate :}} \par {\fontsize{10pt}{12.0pt}\selectfont 10.} \par } \\
+\hhline{--}
+
+\end{tabular}
+ \end{table}
+\begin{table}[H]
+ 			\centering
+\begin{tabular}{p{1.65in}p{4.45in}}
+\hhline{--}
+%row no:1
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Identifier:}} \par 
+G-US6
+\par } \\
+\hhline{--}
+%row no:2
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{User Story Statement:}} \par
+A customer can perform basic arithmetic operation - division of two numbers so that they can use this result in their work.
+\par } \\
+\hhline{--}
+%row no:3
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Constraints}} \par 
+None
+\par } \\
+\hhline{--}
+%row no:4
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Acceptance Test}} \par 
+\begin{table}[H]
+ 			\centering
+\begin{tabular}{p{1.36in}p{1.36in}p{1.36in}p{1.36in}}
+\hline
+%row no:1
+\multicolumn{1}{|p{1.36in}}{Identifier} & 
+\multicolumn{1}{|p{1.36in}}{Given} & 
+\multicolumn{1}{|p{1.36in}}{When} & 
+\multicolumn{1}{|p{1.36in}|}{Then} \\
+\hhline{----}
+%row no:2
+\multicolumn{1}{|p{1.36in}}{T\_G-US6\_1} & 
+\multicolumn{1}{|p{1.36in}}{Constraint is met – if any.} & 
+\multicolumn{1}{|p{1.36in}}{User Performs operation :  \par 0.31/2} & 
+\multicolumn{1}{|p{1.36in}|}{\cellcolor[HTML]{FFFFFF}Display Result upto 2 decimal places = {\fontsize{14pt}{16.8pt}\selectfont 0.15} \par AND \par Display Result upto 3 decimal places={\fontsize{14pt}{16.8pt}\selectfont 0.155} \par AND \par Save the result and user operation locally.} \\
+\hhline{----}
+%row no:3
+\multicolumn{1}{|p{1.36in}}{T\_G-US6\_2} & 
+\multicolumn{1}{|p{1.36in}}{Constraint is met – if any.} & 
+\multicolumn{1}{|p{1.36in}}{User Performs Operation :  \par 91.2/9} & 
+\multicolumn{1}{|p{1.36in}|}{\cellcolor[HTML]{FFFFFF}Display Result upto 2 decimal places = {\fontsize{14pt}{16.8pt}\selectfont 10.13} \par AND \par Display Result upto 3 decimal places={\fontsize{14pt}{16.8pt}\selectfont  10.133} \par AND \par Save the result and user operation locally.} \\
+\hhline{----}
+%row no:4
+\multicolumn{1}{|p{1.36in}}{T\_G-US6\_3} & 
+\multicolumn{1}{|p{1.36in}}{Constraint is met – if any.} & 
+\multicolumn{1}{|p{1.36in}}{User Performs Operation :  \par 5/0} & 
+\multicolumn{1}{|p{1.36in}|}{\cellcolor[HTML]{FFFFFF}Display Math Error AND  \par Save the result locally. } \\
+\hhline{----}
+
+\end{tabular}
+ \end{table}
+\par } \\
+\hhline{--}
+%row no:5
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Priority}} \par {\fontsize{10pt}{12.0pt}\selectfont 1.} \par } \\
+\hhline{--}
+%row no:6
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Estimate :}} \par {\fontsize{10pt}{12.0pt}\selectfont 10.} \par } \\
+\hhline{--}
+
+\end{tabular}
+ \end{table}
+\begin{table}[H]
+ 			\centering
+\begin{tabular}{p{1.65in}p{4.45in}}
+\hhline{--}
+%row no:1
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Identifier:}} \par 
+G-US7
+\par } \\
+\hhline{--}
+%row no:2
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{User Story Statement:}} \par
+A customer can perform Basic arithmetic operation - multiplication of two numbers so that they can use this result in their work.
+\par } \\
+\hhline{--}
+%row no:3
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Constraints}} \par
+None.
+\par } \\
+\hhline{--}
+%row no:4
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Acceptance Test}} \par 
+\begin{table}[H]
+ 			\centering
+\begin{tabular}{p{1.36in}p{1.36in}p{1.36in}p{1.36in}}
+\hline
+%row no:1
+\multicolumn{1}{|p{1.36in}}{Identifier} & 
+\multicolumn{1}{|p{1.36in}}{Given} & 
+\multicolumn{1}{|p{1.36in}}{When} & 
+\multicolumn{1}{|p{1.36in}|}{Then} \\
+\hhline{----}
+%row no:2
+\multicolumn{1}{|p{1.36in}}{T\_G-US7\_1} & 
+\multicolumn{1}{|p{1.36in}}{Constraint is met – if any.} & 
+\multicolumn{1}{|p{1.36in}}{User Performs operation :  \par 2 * 4} & 
+\multicolumn{1}{|p{1.36in}|}{\cellcolor[HTML]{FFFFFF}Display Result upto 2 decimal places = {\fontsize{14pt}{16.8pt}\selectfont 8.00} \par AND \par Display Result upto 3 decimal places={\fontsize{14pt}{16.8pt}\selectfont 8.000} \par AND \par Save the result and user operation locally.} \\
+\hhline{----}
+%row no:3
+\multicolumn{1}{|p{1.36in}}{T\_G-US7\_2} & 
+\multicolumn{1}{|p{1.36in}}{Constraint is met – if any.} & 
+\multicolumn{1}{|p{1.36in}}{User Performs Operation :  \par 16.999 * 3.31} & 
+\multicolumn{1}{|p{1.36in}|}{\cellcolor[HTML]{FFFFFF}Display Result upto 2 decimal places = {\fontsize{14pt}{16.8pt}\selectfont 56.27} \par AND \par Display Result upto 3 decimal places={\fontsize{14pt}{16.8pt}\selectfont  56.267} \par AND \par Save the result and user operation locally.} \\
+\hhline{----}
+
+\end{tabular}
+ \end{table}
+\par } \\
+\hhline{--}
+%row no:5
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Priority}} \par {\fontsize{10pt}{12.0pt}\selectfont 1.} \par } \\
+\hhline{--}
+%row no:6
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Estimate :}} \par {\fontsize{10pt}{12.0pt}\selectfont 10.} \par } \\
+\hhline{--}
+
+\end{tabular}
+ \end{table}
+\subsection{User Stories by user - Nileesha Fernando}
+\begin{table}[H]
+ 			\centering
+\begin{tabular}{p{1.65in}p{4.45in}}
+\hhline{--}
+%row no:1
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Identifier:}} \par 
+L-US1
+\par } \\
+\hhline{--}
+%row no:2
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{User Story Statement}} \par 
+As a customer Nileesha wants to have the history of calculation saved so that she can see a result she computed previously.
+\par } \\
+\hhline{--}
+%row no:3
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Constraints}} \par 
+User Session History must be displayed under 30 seconds.
+\par } \\
+\hhline{--}
+%row no:4
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Acceptance Test}} \par 
+\begin{table}[H]
+ 			\centering
+\begin{tabular}{p{1.36in}p{1.36in}p{1.36in}p{1.36in}}
+\hline
+%row no:1
+\multicolumn{1}{|p{1.36in}}{Identifier} & 
+\multicolumn{1}{|p{1.36in}}{Given} & 
+\multicolumn{1}{|p{1.36in}}{When} & 
+\multicolumn{1}{|p{1.36in}|}{Then} \\
+\hhline{----}
+%row no:2
+\multicolumn{1}{|p{1.36in}}{T\_L-US1\_1} & 
+\multicolumn{1}{|p{1.36in}}{Constraint is met – if any.} & 
+\multicolumn{1}{|p{1.36in}}{User Performs operations in a session :  \par 2+.2\par 10*2\par ln(2)\par ln(-10)+ln(2)} & 
+\multicolumn{1}{|p{1.50in}|}{2+.2=2.20;2.200 \par10*2=20.00,20.000 \par ln(2) = 0.69;0.693\par ln(-10)+ln(2)=Math Error} \\
+\hhline{----}
+
+
+\end{tabular}
+ \end{table}
+\par } \\
+\hhline{--}
+%row no:5
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Priority}} \par {\fontsize{10pt}{12.0pt}\selectfont 1.} \par } \\
+\hhline{--}
+%row no:6
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Estimate :}} \par {\fontsize{10pt}{12.0pt}\selectfont 10.} \par } \\
+\hhline{--}
+
+\end{tabular}
+ \end{table}
+\begin{table}[H]
+ 			\centering
+\begin{tabular}{p{1.65in}p{4.45in}}
+\hhline{--}
+%row no:1
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Identifier:}} \par 
+L-US2
+\par } \\
+\hhline{--}
+%row no:2
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{User Story Statement}} \par 
+As a customer Nileesha wants to get the result of the application of Natural log property - Quotient Rule on a natural log of a number with $ln_{e}2$ so that she can quickly get the result of this computation and hence save time during examination.
+\par } \\
+\hhline{--}
+%row no:3
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Constraints}} \par 
+None.
+\par } \\
+\hhline{--}
+%row no:4
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Acceptance Test}} \par 
+\begin{table}[H]
+ 			\centering
+\begin{tabular}{p{1.36in}p{1.36in}p{1.36in}p{1.36in}}
+\hline
+%row no:1
+\multicolumn{1}{|p{1.36in}}{Identifier} & 
+\multicolumn{1}{|p{1.36in}}{Given} & 
+\multicolumn{1}{|p{1.36in}}{When} & 
+\multicolumn{1}{|p{1.36in}|}{Then} \\
+\hhline{----}
+%row no:2
+\multicolumn{1}{|p{1.36in}}{T\_L-US2\_1} & 
+\multicolumn{1}{|p{1.36in}}{Constraint is met – if any.} & 
+\multicolumn{1}{|p{1.36in}}{User Performs operation :  \par Ln(4/2)} & 
+\multicolumn{1}{|p{1.36in}|}{Display Result upto 2 decimal places = 0.69 \par AND \par Display Result upto 3 decimal places=0.693 \par AND \par Save the result and user operation locally.} \\
+\hhline{----}
+%row no:3
+\multicolumn{1}{|p{1.36in}}{T\_L-US2\_2} & 
+\multicolumn{1}{|p{1.36in}}{Constraint is met – if any.} & 
+\multicolumn{1}{|p{1.36in}}{User Performs operation :  \par Ln(-16/2)} & 
+\multicolumn{1}{|p{1.36in}|}{Display Math Error AND  \par Save the result locally. } \\
+\hhline{----}
+
+\end{tabular}
+ \end{table}
+
+\par } \\
+\hhline{--}
+%row no:5
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Priority}} \par {\fontsize{10pt}{12.0pt}\selectfont 1.} \par } \\
+\hhline{--}
+%row no:6
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Estimate :}} \par {\fontsize{10pt}{12.0pt}\selectfont 10.} \par } \\
+\hhline{--}
+
+\end{tabular}
+ \end{table}
+\begin{table}[H]
+ 			\centering
+\begin{tabular}{p{1.65in}p{4.45in}}
+\hhline{--}
+%row no:1
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Identifier:}} \par 
+L-US3
+\par } \\
+\hhline{--}
+%row no:1
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{User Story Statement}} \par 
+As a customer Nileesha wants to get the result of the application of Natural log property - Product Rule on a natural log of a number with $ln_{e}2$ so that she can quickly get the result of this computation and hence save time during examination.
+\par } \\
+\hhline{--}
+%row no:3
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Constraints}} \par 
+None.
+\par } \\
+\hhline{--}
+%row no:2
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Acceptance Test}} \par 
+\begin{table}[H]
+ 			\centering
+\begin{tabular}{p{1.36in}p{1.36in}p{1.36in}p{1.36in}}
+\hline
+%row no:1
+\multicolumn{1}{|p{1.36in}}{Identifier} & 
+\multicolumn{1}{|p{1.36in}}{Given} & 
+\multicolumn{1}{|p{1.36in}}{When} & 
+\multicolumn{1}{|p{1.36in}|}{Then} \\
+\hhline{----}
+%row no:2
+\multicolumn{1}{|p{1.36in}}{T\_L-US3\_1} & 
+\multicolumn{1}{|p{1.36in}}{Constraint is met – if any.} & 
+\multicolumn{1}{|p{1.36in}}{User Performs operation :  \par Ln(4 * 2)} & 
+\multicolumn{1}{|p{1.36in}|}{Display Result upto 2 decimal places = 2.08 \par AND \par Display Result upto 3 decimal places= 2.079 \par AND \par Save the result and user operation locally.} \\
+\hhline{----}
+%row no:3
+\multicolumn{1}{|p{1.36in}}{T\_L-US3\_2} & 
+\multicolumn{1}{|p{1.36in}}{Constraint is met – if any.} & 
+\multicolumn{1}{|p{1.36in}}{User Performs operation :  \par Ln(-16 * 2)} & 
+\multicolumn{1}{|p{1.36in}|}{Display Math Error AND  \par Save the result locally. } \\
+\hhline{----}
+
+\end{tabular}
+ \end{table}
+\par } \\
+\hhline{--}
+%row no:3
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Priority}} \par {\fontsize{10pt}{12.0pt}\selectfont 1.} \par } \\
+\hhline{--}
+%row no:4
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Estimate :}} \par {\fontsize{10pt}{12.0pt}\selectfont 10.} \par } \\
+\hhline{--}
+
+\end{tabular}
+ \end{table}
+\begin{table}[H]
+ 			\centering
+\begin{tabular}{p{1.65in}p{4.45in}}
+\hhline{--}
+%row no:1
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Identifier:}} \par 
+L-US4
+\par } \\
+\hhline{--}
+%row no:1
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{User Story Statement}} \par 
+As a customer Nileesha wants to get the result of the application of Natural log property- Power Rule on a natural log of a number with $ln_{e}2$ so that she can quickly get the result of this computation and hence save time during examination.
+\par } \\
+\hhline{--}
+%row no:3
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Constraints}} \par 
+None.
+\par } \\
+\hhline{--}
+%row no:2
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Acceptance Test}} \par 
+\begin{table}[H]
+ 			\centering
+\begin{tabular}{p{1.36in}p{1.36in}p{1.36in}p{1.36in}}
+\hline
+%row no:1
+\multicolumn{1}{|p{1.36in}}{Identifier} & 
+\multicolumn{1}{|p{1.36in}}{Given} & 
+\multicolumn{1}{|p{1.36in}}{When} & 
+\multicolumn{1}{|p{1.36in}|}{Then} \\
+\hhline{----}
+%row no:2
+\multicolumn{1}{|p{1.36in}}{T\_L-US4\_1} & 
+\multicolumn{1}{|p{1.36in}}{Constraint is met – if any.} & 
+\multicolumn{1}{|p{1.36in}}{User Performs operation :  \par $ln(2^8)$} & 
+\multicolumn{1}{|p{1.36in}|}{Display Result upto 2 decimal places = 5.55 \par AND \par Display Result upto 3 decimal places= 5.545 \par AND \par Save the result and user operation locally.} \\
+\hhline{----}
+%row no:3
+\multicolumn{1}{|p{1.36in}}{T\_L-US4\_2} & 
+\multicolumn{1}{|p{1.36in}}{Constraint is met – if any.} & 
+\multicolumn{1}{|p{1.36in}}{User Performs operation :  \par $ln( 2^{-10} )$} & 
+\multicolumn{1}{|p{1.36in}|}{Display Result upto 2 decimal places = $-6.93$ \par AND \par Display Result upto 3 decimal places = $-6.931$ \par AND \par Save the result and user operation locally.} \\
+\hhline{----}
+
+\end{tabular}
+ \end{table}
+
+\par } \\
+\hhline{--}
+%row no:3
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Priority}} \par {\fontsize{10pt}{12.0pt}\selectfont 1.} \par } \\
+\hhline{--}
+%row no:4
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Estimate :}} \par {\fontsize{10pt}{12.0pt}\selectfont 10.} \par } \\
+\hhline{--}
+
+\end{tabular}
+ \end{table}
+\begin{table}[H]
+ 			\centering
+\begin{tabular}{p{1.65in}p{4.45in}}
+\hhline{--}
+%row no:1
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Identifier:}} \par 
+L-US5
+\par } \\
+\hhline{--}
+%row no:2
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{User Story Statement}} \par 
+As a customer Nileesha wants to get the result of the Inverse Function of $ln_{e}2$ so that she can quickly get the result of this computation and hence save time during examination.
+\par } \\
+\hhline{--}
+%row no:3
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Constraints}} \par 
+None.
+\par } \\
+\hhline{--}
+%row no:4
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Acceptance Test}} \par 
+\begin{table}[H]
+ 			\centering
+\begin{tabular}{p{1.36in}p{1.36in}p{1.36in}p{1.36in}}
+\hline
+%row no:1
+\multicolumn{1}{|p{1.36in}}{Identifier} & 
+\multicolumn{1}{|p{1.36in}}{Given} & 
+\multicolumn{1}{|p{1.36in}}{When} & 
+\multicolumn{1}{|p{1.36in}|}{Then} \\
+\hhline{----}
+%row no:2
+\multicolumn{1}{|p{1.36in}}{T\_L-US5\_1} & 
+\multicolumn{1}{|p{1.36in}}{Constraint is met – if any.} & 
+\multicolumn{1}{|p{1.50in}}{User Performs operation :  \par InverseFunction(ln(2))} & 
+\multicolumn{1}{|p{1.36in}|}{Display Result upto 2 decimal places = 7.39 \par AND \par Display Result upto 3 decimal places= 7.389 \par AND \par Save the result and user operation locally.} \\
+\hhline{----}
+
+
+\end{tabular}
+ \end{table}
+
+\par } \\
+\hhline{--}
+%row no:5
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Priority}} \par {\fontsize{10pt}{12.0pt}\selectfont 1.} \par } \\
+\hhline{--}
+%row no:6
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Estimate :}} \par {\fontsize{10pt}{12.0pt}\selectfont 10.} \par } \\
+\hhline{--}
+
+\end{tabular}
+ \end{table}
+\begin{table}[H]
+ 			\centering
+\begin{tabular}{p{1.65in}p{4.45in}}
+\hhline{--}
+%row no:1
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Identifier:}} \par 
+L-US6
+\par } \\
+\hhline{--}
+%row no:2
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{User Story Statement}} \par 
+As a customer Nileesha wants to get the result of adding a number to $ln_{e}2$ so that she can quickly get the result of this computation and hence save time during examination.
+\par } \\
+\hhline{--}
+%row no:3
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Constraints}} \par 
+None.
+\par } \\
+\hhline{--}
+%row no:4
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Acceptance Test}} \par 
+\begin{table}[H]
+ 			\centering
+\begin{tabular}{p{1.36in}p{1.36in}p{1.36in}p{1.36in}}
+\hline
+%row no:1
+\multicolumn{1}{|p{1.36in}}{Identifier} & 
+\multicolumn{1}{|p{1.36in}}{Given} & 
+\multicolumn{1}{|p{1.36in}}{When} & 
+\multicolumn{1}{|p{1.36in}|}{Then} \\
+\hhline{----}
+%row no:2
+\multicolumn{1}{|p{1.36in}}{T\_L-US6\_1} & 
+\multicolumn{1}{|p{1.36in}}{Constraint is met – if any.} & 
+\multicolumn{1}{|p{1.36in}}{User Performs operation :  \par $10.5+ln(2)$} & 
+\multicolumn{1}{|p{1.36in}|}{Display Result upto 2 decimal places = 11.19 \par AND \par Display Result upto 3 decimal places= 11.193 \par AND \par Save the result and user operation locally.} \\
+\hhline{----}
+%row no:3
+\multicolumn{1}{|p{1.36in}}{T\_L-US6\_2} & 
+\multicolumn{1}{|p{1.36in}}{Constraint is met – if any.} & 
+\multicolumn{1}{|p{1.36in}}{User Performs operation :  \par $ln(2)+89.9$} & 
+\multicolumn{1}{|p{1.36in}|}{Display Result upto 2 decimal places = $90.59$ \par AND \par Display Result upto 3 decimal places = $90.593$ \par AND \par Save the result and user operation locally.} \\
+\hhline{----}
+
+\end{tabular}
+ \end{table}
+
+\par } \\
+\hhline{--}
+%row no:5
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Priority}} \par {\fontsize{10pt}{12.0pt}\selectfont 1.} \par } \\
+\hhline{--}
+%row no:6
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Estimate :}} \par {\fontsize{10pt}{12.0pt}\selectfont 10.} \par } \\
+\hhline{--}
+
+\end{tabular}
+ \end{table}
+\begin{table}[H]
+ 			\centering
+\begin{tabular}{p{1.65in}p{4.45in}}
+\hhline{--}
+%row no:1
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Identifier:}} \par 
+L-US7
+\par } \\
+\hhline{--}
+%row no:1
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{User Story Statement}} \par 
+As a customer Nileesha wants to get the result of subtraction of  $ln_{e}2$ and a number so that she can quickly get the result of this computation and hence save time during examination.
+\par } \\
+\hhline{--}
+%row no:3
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Constraints}} \par 
+None.
+\par } \\
+\hhline{--}
+%row no:2
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Acceptance Test}} \par 
+\begin{table}[H]
+ 			\centering
+\begin{tabular}{p{1.36in}p{1.36in}p{1.36in}p{1.36in}}
+\hline
+%row no:1
+\multicolumn{1}{|p{1.36in}}{Identifier} & 
+\multicolumn{1}{|p{1.36in}}{Given} & 
+\multicolumn{1}{|p{1.36in}}{When} & 
+\multicolumn{1}{|p{1.36in}|}{Then} \\
+\hhline{----}
+%row no:2
+\multicolumn{1}{|p{1.36in}}{T\_L-US7\_1} & 
+\multicolumn{1}{|p{1.36in}}{Constraint is met – if any.} & 
+\multicolumn{1}{|p{1.36in}}{User Performs operation :  \par $10.5 - ln(2)$} & 
+\multicolumn{1}{|p{1.36in}|}{Display Result upto 2 decimal places = 9.81 \par AND \par Display Result upto 3 decimal places= 9.807 \par AND \par Save the result and user operation locally.} \\
+\hhline{----}
+%row no:3
+\multicolumn{1}{|p{1.36in}}{T\_L-US7\_2} & 
+\multicolumn{1}{|p{1.36in}}{Constraint is met – if any.} & 
+\multicolumn{1}{|p{1.36in}}{User Performs operation :  \par $ln(2) - 89.9$} & 
+\multicolumn{1}{|p{1.36in}|}{Display Result upto 2 decimal places = $-89.21$  \par AND \par Display Result upto 3 decimal places = $-89.207$  \par AND \par Save the result and user operation locally.} \\
+\hhline{----}
+
+\end{tabular}
+ \end{table}
+
+\par } \\
+\hhline{--}
+%row no:3
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Priority}} \par {\fontsize{10pt}{12.0pt}\selectfont 1.} \par } \\
+\hhline{--}
+%row no:4
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Estimate :}} \par {\fontsize{10pt}{12.0pt}\selectfont 10.} \par } \\
+\hhline{--}
+
+\end{tabular}
+ \end{table}
+
+\begin{table}[H]
+ 			\centering
+\begin{tabular}{p{1.65in}p{4.45in}}
+\hhline{--}
+%row no:1
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Identifier:}} \par 
+L-US8
+\par } \\
+\hhline{--}
+%row no:1
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{User Story Statement}} \par 
+As a customer Nileesha wants to get the result of multiplying a number and $ln_{e}2$ so that she can quickly get the result of this computation and hence save time during examination.
+\par } \\
+\hhline{--}
+%row no:3
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Constraints}} \par 
+None.
+\par } \\
+\hhline{--}
+%row no:2
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Acceptance Test}} \par 
+\begin{table}[H]
+ 			\centering
+\begin{tabular}{p{1.36in}p{1.36in}p{1.36in}p{1.36in}}
+\hline
+%row no:1
+\multicolumn{1}{|p{1.36in}}{Identifier} & 
+\multicolumn{1}{|p{1.36in}}{Given} & 
+\multicolumn{1}{|p{1.36in}}{When} & 
+\multicolumn{1}{|p{1.36in}|}{Then} \\
+\hhline{----}
+%row no:2
+\multicolumn{1}{|p{1.36in}}{T\_L-US8\_1} & 
+\multicolumn{1}{|p{1.36in}}{Constraint is met – if any.} & 
+\multicolumn{1}{|p{1.36in}}{User Performs operation :  \par $10.5 - ln(2)$} & 
+\multicolumn{1}{|p{1.36in}|}{Display Result upto 2 decimal places = 9.81 \par AND \par Display Result upto 3 decimal places= 9.807 \par AND \par Save the result and user operation locally.} \\
+\hhline{----}
+%row no:3
+\multicolumn{1}{|p{1.36in}}{T\_L-US8\_2} & 
+\multicolumn{1}{|p{1.36in}}{Constraint is met – if any.} & 
+\multicolumn{1}{|p{1.36in}}{User Performs operation :  \par $ln(2) - 89.9$} & 
+\multicolumn{1}{|p{1.36in}|}{Display Result upto 2 decimal places = $-89.21$  \par AND \par Display Result upto 3 decimal places = $-89.207$  \par AND \par Save the result and user operation locally.} \\
+\hhline{----}
+
+\end{tabular}
+ \end{table}
+\par } \\
+\hhline{--}
+%row no:3
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Priority}} \par {\fontsize{10pt}{12.0pt}\selectfont 1.} \par } \\
+\hhline{--}
+%row no:4
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Estimate :}} \par {\fontsize{10pt}{12.0pt}\selectfont 10.} \par } \\
+\hhline{--}
+
+\end{tabular}
+ \end{table}
+\begin{table}[H]
+ 			\centering
+\begin{tabular}{p{1.65in}p{4.45in}}
+\hhline{--}
+%row no:1
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Identifier:}} \par 
+L-US9
+\par } \\
+\hhline{--}
+%row no:1
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{User Story Statement}} \par 
+As a customer Nileesha wants to get the result of dividing a number and $ln_{e}2$ so that she can quickly get the result of this computation and hence save time during examination.
+\par } \\
+\hhline{--}
+%row no:3
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Constraints}} \par 
+None.
+\par } \\
+\hhline{--}
+%row no:2
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Acceptance Test}} \par 
+\begin{table}[H]
+ 			\centering
+\begin{tabular}{p{1.36in}p{1.36in}p{1.36in}p{1.36in}}
+\hline
+%row no:1
+\multicolumn{1}{|p{1.36in}}{Identifier} & 
+\multicolumn{1}{|p{1.36in}}{Given} & 
+\multicolumn{1}{|p{1.36in}}{When} & 
+\multicolumn{1}{|p{1.36in}|}{Then} \\
+\hhline{----}
+%row no:2
+\multicolumn{1}{|p{1.36in}}{T\_L-US7\_1} & 
+\multicolumn{1}{|p{1.36in}}{Constraint is met – if any.} & 
+\multicolumn{1}{|p{1.36in}}{User Performs operation :  \par $10.5 - ln(2)$} & 
+\multicolumn{1}{|p{1.36in}|}{Display Result upto 2 decimal places = 9.81 \par AND \par Display Result upto 3 decimal places= 9.807 \par AND \par Save the result and user operation locally.} \\
+\hhline{----}
+%row no:3
+\multicolumn{1}{|p{1.36in}}{T\_L-US7\_2} & 
+\multicolumn{1}{|p{1.36in}}{Constraint is met – if any.} & 
+\multicolumn{1}{|p{1.36in}}{User Performs operation :  \par $ln(2) - 89.9$} & 
+\multicolumn{1}{|p{1.36in}|}{Display Result upto 2 decimal places = $-89.21$  \par AND \par Display Result upto 3 decimal places = $-89.207$  \par AND \par Save the result and user operation locally.} \\
+\hhline{----}
+
+\end{tabular}
+ \end{table}
+\par } \\
+\hhline{--}
+%row no:3
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Priority}} \par {\fontsize{10pt}{12.0pt}\selectfont 1.} \par } \\
+\hhline{--}
+%row no:4
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Estimate :}} \par {\fontsize{10pt}{12.0pt}\selectfont 10.} \par } \\
+\hhline{--}
+
+\end{tabular}
+ \end{table}
+
+\subsection{User Stories by user - Manjit}
+\begin{table}[H]
+ 			\centering
+\begin{tabular}{p{1.65in}p{4.45in}}
+\hhline{--}
+%row no:1
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Identifier:}} \par 
+L-US10
+\par } \\
+\hhline{--}
+%row no:1
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{User Story Statement}} \par 
+As a customer Manjit wants to compute the time required for the Initial Principal to be doubled when the Interest rate is compounded annually by using the value of $ln_{e}2$ so that he can get the results of this computation quickly while he is teaching in lecture and would like to share this feature with his students so that they can solve such complex math problem faster during exam time. 
+\par } \\
+\hhline{--}
+%row no:3
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Constraints}} \par 
+None.
+\par } \\
+\hhline{--}
+%row no:2
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Acceptance Test}} \par 
+\begin{table}[H]
+ 			\centering
+\begin{tabular}{p{1.36in}p{1.36in}p{1.36in}p{1.36in}}
+\hline
+%row no:1
+\multicolumn{1}{|p{1.36in}}{Identifier} & 
+\multicolumn{1}{|p{1.36in}}{Given} & 
+\multicolumn{1}{|p{1.36in}}{When} & 
+\multicolumn{1}{|p{1.36in}|}{Then} \\
+\hhline{----}
+%row no:2
+\multicolumn{1}{|p{1.36in}}{T\_L-US7\_1} & 
+\multicolumn{1}{|p{1.36in}}{Constraint is met – if any.} & 
+\multicolumn{1}{|p{1.36in}}{User Performs operation :  \par $10.5 - ln(2)$} & 
+\multicolumn{1}{|p{1.36in}|}{Display Result upto 2 decimal places = 9.81 \par AND \par Display Result upto 3 decimal places= 9.807 \par AND \par Save the result and user operation locally.} \\
+\hhline{----}
+%row no:3
+\multicolumn{1}{|p{1.36in}}{T\_L-US7\_2} & 
+\multicolumn{1}{|p{1.36in}}{Constraint is met – if any.} & 
+\multicolumn{1}{|p{1.36in}}{User Performs operation :  \par $ln(2) - 89.9$} & 
+\multicolumn{1}{|p{1.36in}|}{Display Result upto 2 decimal places = $-89.21$  \par AND \par Display Result upto 3 decimal places = $-89.207$  \par AND \par Save the result and user operation locally.} \\
+\hhline{----}
+
+\end{tabular}
+ \end{table}
+\par } \\
+\hhline{--}
+%row no:3
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Priority}} \par {\fontsize{10pt}{12.0pt}\selectfont 1.} \par } \\
+\hhline{--}
+%row no:4
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Estimate :}} \par {\fontsize{10pt}{12.0pt}\selectfont 10.} \par } \\
+\hhline{--}
+
+\end{tabular}
+ \end{table}
+\begin{table}[H]
+ 			\centering
+\begin{tabular}{p{1.65in}p{4.45in}}
+\hhline{--}
+%row no:1
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Identifier:}} \par 
+L-US11
+\par } \\
+\hhline{--}
+%row no:1
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{User Story Statement}} \par 
+As a customer Manjit wants to compute the time required for the Initial Principal to be doubled when the Interest rate is compounded continuously by using the value of $ln_{e}2$ so that he can get the results of this computation quickly while he is teaching in lecture and would like to share this feature with his students so that they can solve such complex math problem faster during exam time. 
+\par } \\
+\hhline{--}
+%row no:3
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Constraints}} \par 
+None.
+\par } \\
+\hhline{--}
+%row no:2
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Acceptance Test}} \par 
+\begin{table}[H]
+ 			\centering
+\begin{tabular}{p{1.36in}p{1.36in}p{1.36in}p{1.36in}}
+\hline
+%row no:1
+\multicolumn{1}{|p{1.36in}}{Identifier} & 
+\multicolumn{1}{|p{1.36in}}{Given} & 
+\multicolumn{1}{|p{1.36in}}{When} & 
+\multicolumn{1}{|p{1.36in}|}{Then} \\
+\hhline{----}
+%row no:2
+\multicolumn{1}{|p{1.36in}}{T\_L-US7\_1} & 
+\multicolumn{1}{|p{1.36in}}{Constraint is met – if any.} & 
+\multicolumn{1}{|p{1.36in}}{User Performs operation :  \par $10.5 - ln(2)$} & 
+\multicolumn{1}{|p{1.36in}|}{Display Result upto 2 decimal places = 9.81 \par AND \par Display Result upto 3 decimal places= 9.807 \par AND \par Save the result and user operation locally.} \\
+\hhline{----}
+%row no:3
+\multicolumn{1}{|p{1.36in}}{T\_L-US7\_2} & 
+\multicolumn{1}{|p{1.36in}}{Constraint is met – if any.} & 
+\multicolumn{1}{|p{1.36in}}{User Performs operation :  \par $ln(2) - 89.9$} & 
+\multicolumn{1}{|p{1.36in}|}{Display Result upto 2 decimal places = $-89.21$  \par AND \par Display Result upto 3 decimal places = $-89.207$  \par AND \par Save the result and user operation locally.} \\
+\hhline{----}
+
+\end{tabular}
+ \end{table}
+\par } \\
+\hhline{--}
+%row no:3
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Priority}} \par {\fontsize{10pt}{12.0pt}\selectfont 1.} \par } \\
+\hhline{--}
+%row no:4
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Estimate :}} \par {\fontsize{10pt}{12.0pt}\selectfont 10.} \par } \\
+\hhline{--}
+
+\end{tabular}
+ \end{table}
+\subsection{User Stories by user - Marc Anthony}
+\begin{table}[H]
+ 			\centering
+\begin{tabular}{p{1.65in}p{4.45in}}
+\hhline{--}
+%row no:1
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Identifier:}} \par 
+L-US12
+\par } \\
+\hhline{--}
+%row no:1
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{User Story Statement}} \par 
+As a customer Marc wants to compute half life of a substance by supplying only two parameters i.e. initial amount and rate of decay annually so that he quickly perform the computations for large number of substances.
+\par } \\
+\hhline{--}
+%row no:3
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Constraints}} \par 
+None.
+\par } \\
+\hhline{--}
+%row no:2
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Acceptance Test}} \par 
+\begin{table}[H]
+ 			\centering
+\begin{tabular}{p{1.36in}p{1.36in}p{1.36in}p{1.36in}}
+\hline
+%row no:1
+\multicolumn{1}{|p{1.36in}}{Identifier} & 
+\multicolumn{1}{|p{1.36in}}{Given} & 
+\multicolumn{1}{|p{1.36in}}{When} & 
+\multicolumn{1}{|p{1.36in}|}{Then} \\
+\hhline{----}
+%row no:2
+\multicolumn{1}{|p{1.36in}}{T\_L-US7\_1} & 
+\multicolumn{1}{|p{1.36in}}{Constraint is met – if any.} & 
+\multicolumn{1}{|p{1.36in}}{User Performs operation :  \par $10.5 - ln(2)$} & 
+\multicolumn{1}{|p{1.36in}|}{Display Result upto 2 decimal places = 9.81 \par AND \par Display Result upto 3 decimal places= 9.807 \par AND \par Save the result and user operation locally.} \\
+\hhline{----}
+%row no:3
+\multicolumn{1}{|p{1.36in}}{T\_L-US7\_2} & 
+\multicolumn{1}{|p{1.36in}}{Constraint is met – if any.} & 
+\multicolumn{1}{|p{1.36in}}{User Performs operation :  \par $ln(2) - 89.9$} & 
+\multicolumn{1}{|p{1.36in}|}{Display Result upto 2 decimal places = $-89.21$  \par AND \par Display Result upto 3 decimal places = $-89.207$  \par AND \par Save the result and user operation locally.} \\
+\hhline{----}
+
+\end{tabular}
+ \end{table}
+
+\par } \\
+\hhline{--}
+%row no:3
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Priority}} \par {\fontsize{10pt}{12.0pt}\selectfont 1.} \par } \\
+\hhline{--}
+%row no:4
+\multicolumn{2}{|p{6.29in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Estimate :}} \par {\fontsize{10pt}{12.0pt}\selectfont 10.} \par } \\
+\hhline{--}
+
+\end{tabular}
+ \end{table}
+\section{Problem7 : Backward traceability matrix}
+{
+\setlength\extrarowheight{3pt}
+\begin{longtable}{p{0.56in}p{0.65in}p{1.19in}p{0.53in}p{0.46in}p{0.64in}p{0.99in}}
+
+\endfirsthead
+\hline
+\endhead\hline
+\endfoot
+\hline 
+\endlastfoot\hline
+%row no:1
+\multicolumn{1}{|p{0.56in}}{User Story Scope} & 
+\multicolumn{1}{|p{0.65in}}{User Story Identifier} & 
+\multicolumn{1}{|p{1.19in}}{User Story Statement} & 
+\multicolumn{1}{|p{0.53in}}{User Story Source - Use Case} & 
+\multicolumn{1}{|p{0.46in}}{User Story Source – Use Story} & 
+\multicolumn{1}{|p{0.64in}}{User Story Source -Interview} & 
+\multicolumn{1}{|p{0.99in}|}{User Story Source-Online resources(such a blogs),Textbook} \\
+\hhline{-------}
+%row no:2
+\multicolumn{1}{|p{0.56in}}{Global} & 
+\multicolumn{1}{|p{0.65in}}{G-US1} & 
+\multicolumn{1}{|p{1.19in}}{A customer can view the result on a User Interface so that they can see the result of the \par computed value after execution of an operation.} & 
+\multicolumn{1}{|p{0.53in}}{} & 
+\multicolumn{1}{|p{0.46in}}{} & 
+\multicolumn{1}{|p{0.64in}}{} & 
+\multicolumn{1}{|p{0.99in}|}{} \\
+\hhline{-------}
+%row no:3
+\multicolumn{1}{|p{0.56in}}{Global} & 
+\multicolumn{1}{|p{0.65in}}{G-US2} & 
+\multicolumn{1}{|p{1.19in}}{A customer can get the result upto a certain precision i.e either 2 decimal places or 3 decimal \par places so that they dont have to perform rounding off of a result manually(mentally).} & 
+\multicolumn{1}{|p{0.53in}}{} & 
+\multicolumn{1}{|p{0.46in}}{} & 
+\multicolumn{1}{|p{0.64in}}{} & 
+\multicolumn{1}{|p{0.99in}|}{} \\
+\hhline{-------}
+%row no:4
+\multicolumn{1}{|p{0.56in}}{Global} & 
+\multicolumn{1}{|p{0.65in}}{G-US3} & 
+\multicolumn{1}{|p{1.19in}}{As customer can get the value of lne2 so that they can use this result in their work.} & 
+\multicolumn{1}{|p{0.53in}}{} & 
+\multicolumn{1}{|p{0.46in}}{} & 
+\multicolumn{1}{|p{0.64in}}{} & 
+\multicolumn{1}{|p{0.99in}|}{} \\
+\hhline{-------}
+%row no:5
+\multicolumn{1}{|p{0.56in}}{Global} & 
+\multicolumn{1}{|p{0.65in}}{G-US4} & 
+\multicolumn{1}{|p{1.19in}}{A customer can perform basic arithmetic operation - addition of two numbers so that
+they can use this result in their work.} & 
+\multicolumn{1}{|p{0.53in}}{} & 
+\multicolumn{1}{|p{0.46in}}{} & 
+\multicolumn{1}{|p{0.64in}}{} & 
+\multicolumn{1}{|p{0.99in}|}{} \\
+\hhline{-------}
+%row no:6
+\multicolumn{1}{|p{0.56in}}{Global} & 
+\multicolumn{1}{|p{0.65in}}{G-US5} & 
+\multicolumn{1}{|p{1.19in}}{A customer can perform basic arithmetic operation- subtraction of two numbers.} & 
+\multicolumn{1}{|p{0.53in}}{} & 
+\multicolumn{1}{|p{0.46in}}{} & 
+\multicolumn{1}{|p{0.64in}}{} & 
+\multicolumn{1}{|p{0.99in}|}{} \\
+\hhline{-------}
+%row no:7
+\multicolumn{1}{|p{0.56in}}{Global} & 
+\multicolumn{1}{|p{0.65in}}{G-US6} & 
+\multicolumn{1}{|p{1.19in}}{A customer can perform basic arithmetic operation - division of two numbers so that
+they can use this result in their work.} & 
+\multicolumn{1}{|p{0.53in}}{} & 
+\multicolumn{1}{|p{0.46in}}{} & 
+\multicolumn{1}{|p{0.64in}}{} & 
+\multicolumn{1}{|p{0.99in}|}{} \\
+\hhline{-------}
+%row no:8
+\multicolumn{1}{|p{0.56in}}{Global} & 
+\multicolumn{1}{|p{0.65in}}{G-US7} & 
+\multicolumn{1}{|p{1.19in}}{A customer can perform Basic arithmetic operation - multiplication of two numbers so that
+they can use this result in their work.} & 
+\multicolumn{1}{|p{0.53in}}{} & 
+\multicolumn{1}{|p{0.46in}}{} & 
+\multicolumn{1}{|p{0.64in}}{} & 
+\multicolumn{1}{|p{0.99in}|}{} \\
+\hhline{-------}
+%row no:9
+\multicolumn{1}{|p{0.56in}}{Local} & 
+\multicolumn{1}{|p{0.65in}}{L-US1} & 
+\multicolumn{1}{|p{1.19in}}{As a customer Nileesha wants to have the history of calculation saved so that she can see \par a result she computed previously.} & 
+\multicolumn{1}{|p{0.53in}}{} & 
+\multicolumn{1}{|p{0.46in}}{} & 
+\multicolumn{1}{|p{0.64in}}{} & 
+\multicolumn{1}{|p{0.99in}|}{} \\
+\hhline{-------}
+%row no:10
+\multicolumn{1}{|p{0.56in}}{Local} & 
+\multicolumn{1}{|p{0.65in}}{L-US2} & 
+\multicolumn{1}{|p{1.19in}}{As a customer Nileesha wants to get the result of the application of Natural log property \par - Quotient Rule on a natural log of a number with lne2 so that she can quickly get the \par result of this computation and hence save time during examination.} & 
+\multicolumn{1}{|p{0.53in}}{} & 
+\multicolumn{1}{|p{0.46in}}{} & 
+\multicolumn{1}{|p{0.64in}}{} & 
+\multicolumn{1}{|p{0.99in}|}{} \\
+\hhline{-------}
+%row no:11
+\multicolumn{1}{|p{0.56in}}{Local} & 
+\multicolumn{1}{|p{0.65in}}{L-US3} & 
+\multicolumn{1}{|p{1.19in}}{As a customer Nileesha wants to get the result of the application of Natural log property \par - Product Rule on a natural log of a number with lne2 so that she can quickly get the \par result of this computation and hence save time during examination.} & 
+\multicolumn{1}{|p{0.53in}}{} & 
+\multicolumn{1}{|p{0.46in}}{} & 
+\multicolumn{1}{|p{0.64in}}{} & 
+\multicolumn{1}{|p{0.99in}|}{} \\
+\hhline{-------}
+%row no:12
+\multicolumn{1}{|p{0.56in}}{Local} & 
+\multicolumn{1}{|p{0.65in}}{L-US4} & 
+\multicolumn{1}{|p{1.19in}}{As a customer Nileesha wants to get the result of the application of Natural log property- \par Power Rule on a natural log of a number with lne2 so that she can quickly get the result \par of this computation and hence save time during examination.} & 
+\multicolumn{1}{|p{0.53in}}{} & 
+\multicolumn{1}{|p{0.46in}}{} & 
+\multicolumn{1}{|p{0.64in}}{} & 
+\multicolumn{1}{|p{0.99in}|}{} \\
+\hhline{-------}
+%row no:13
+\multicolumn{1}{|p{0.56in}}{Local} & 
+\multicolumn{1}{|p{0.65in}}{L-US5} & 
+\multicolumn{1}{|p{1.19in}}{As a customer Nileesha wants to get the result of the Inverse Function of lne2 so that she \par can quickly get the result of this computation and hence save time during examination.} & 
+\multicolumn{1}{|p{0.53in}}{} & 
+\multicolumn{1}{|p{0.46in}}{} & 
+\multicolumn{1}{|p{0.64in}}{} & 
+\multicolumn{1}{|p{0.99in}|}{} \\
+\hhline{-------}
+%row no:14
+\multicolumn{1}{|p{0.56in}}{Local} & 
+\multicolumn{1}{|p{0.65in}}{L-US6} & 
+\multicolumn{1}{|p{1.19in}}{As a customer Nileesha wants to get the result of adding a number to lne2 so that she \par can quickly get the result of this computation and hence save time during examination.} & 
+\multicolumn{1}{|p{0.53in}}{} & 
+\multicolumn{1}{|p{0.46in}}{} & 
+\multicolumn{1}{|p{0.64in}}{} & 
+\multicolumn{1}{|p{0.99in}|}{} \\
+\hhline{-------}
+%row no:15
+\multicolumn{1}{|p{0.56in}}{Local} & 
+\multicolumn{1}{|p{0.65in}}{L-US7} & 
+\multicolumn{1}{|p{1.19in}}{As a customer Nileesha wants to get the result of subtracting a number by the value of \par lne2 so that she can quickly get the result of this computation and hence save time during \par examination.} & 
+\multicolumn{1}{|p{0.53in}}{} & 
+\multicolumn{1}{|p{0.46in}}{} & 
+\multicolumn{1}{|p{0.64in}}{} & 
+\multicolumn{1}{|p{0.99in}|}{} \\
+\hhline{-------}
+%row no:16
+\multicolumn{1}{|p{0.56in}}{Local} & 
+\multicolumn{1}{|p{0.65in}}{L-US8} & 
+\multicolumn{1}{|p{1.19in}}{As a customer Nileesha wants to get the result of subtracting the value of lne2 by a \par number so that she can quickly get the result of this computation and hence save time \par during examination.} & 
+\multicolumn{1}{|p{0.53in}}{} & 
+\multicolumn{1}{|p{0.46in}}{} & 
+\multicolumn{1}{|p{0.64in}}{} & 
+\multicolumn{1}{|p{0.99in}|}{} \\
+\hhline{-------}
+%row no:17
+\multicolumn{1}{|p{0.56in}}{Local} & 
+\multicolumn{1}{|p{0.65in}}{L-US9} & 
+\multicolumn{1}{|p{1.19in}}{As a customer Nileesha wants to get the result of multiplying a number by the value of \par lne2 so that she can quickly get the result of this computation and hence save time during \par examination.} & 
+\multicolumn{1}{|p{0.53in}}{} & 
+\multicolumn{1}{|p{0.46in}}{} & 
+\multicolumn{1}{|p{0.64in}}{} & 
+\multicolumn{1}{|p{0.99in}|}{} \\
+\hhline{-------}
+%row no:18
+\multicolumn{1}{|p{0.56in}}{Local} & 
+\multicolumn{1}{|p{0.65in}}{L-US10} & 
+\multicolumn{1}{|p{1.19in}}{As a customer Nileesha wants to get the result of dividing a number by lne2 so that she \par can quickly get the result of this computation and hence save time during examination.} & 
+\multicolumn{1}{|p{0.53in}}{} & 
+\multicolumn{1}{|p{0.46in}}{} & 
+\multicolumn{1}{|p{0.64in}}{} & 
+\multicolumn{1}{|p{0.99in}|}{} \\
+\hhline{-------}
+%row no:19
+\multicolumn{1}{|p{0.56in}}{Local} & 
+\multicolumn{1}{|p{0.65in}}{L-US11} & 
+\multicolumn{1}{|p{1.19in}}{As a customer Nileesha wants to get the result of dividing the value of lne2 by a number \par so that she can quickly get the result of this computation and hence save time during \par examination.} & 
+\multicolumn{1}{|p{0.53in}}{} & 
+\multicolumn{1}{|p{0.46in}}{} & 
+\multicolumn{1}{|p{0.64in}}{} & 
+\multicolumn{1}{|p{0.99in}|}{} \\
+\hhline{-------}
+%row no:20
+\multicolumn{1}{|p{0.56in}}{Local} & 
+\multicolumn{1}{|p{0.65in}}{L-US12} & 
+\multicolumn{1}{|p{1.19in}}{As a customer Manjit wants to compute the time required for the Initial Principal to \par be doubled when the Interest rate is compounded annually by using the value of lne2 so \par that he can get the results of this computation quickly while he is teaching in lecture and \par would like to share this feature with his students so that they can solve such complex \par math problem faster during exam time.} & 
+\multicolumn{1}{|p{0.53in}}{} & 
+\multicolumn{1}{|p{0.46in}}{} & 
+\multicolumn{1}{|p{0.64in}}{} & 
+\multicolumn{1}{|p{0.99in}|}{} \\
+\hhline{-------}
+%row no:21
+\multicolumn{1}{|p{0.56in}}{Local} & 
+\multicolumn{1}{|p{0.65in}}{L-US13} & 
+\multicolumn{1}{|p{1.19in}}{As a customer Manjit wants to compute the time required for the Initial Principal to be \par doubled when the Interest rate is compounded continuously by using the value of lne2 \par so that he can get the results of this computation quickly while he is teaching in lecture \par and would like to share this feature with his students so that they can solve such complex \par math problem faster during exam time.} & 
+\multicolumn{1}{|p{0.53in}}{} & 
+\multicolumn{1}{|p{0.46in}}{} & 
+\multicolumn{1}{|p{0.64in}}{} & 
+\multicolumn{1}{|p{0.99in}|}{} \\
+\hhline{-------}
+%row no:22
+\multicolumn{1}{|p{0.56in}}{Local} & 
+\multicolumn{1}{|p{0.65in}}{L-US14} & 
+\multicolumn{1}{|p{1.19in}}{As a customer Marc wants to compute half-life of a substance by supplying only two \par parameters i.e. initial amount and rate of decay annually so that he quickly perform the \par computations for large number of substances.} & 
+\multicolumn{1}{|p{0.53in}}{} & 
+\multicolumn{1}{|p{0.46in}}{} & 
+\multicolumn{1}{|p{0.64in}}{} & 
+\multicolumn{1}{|p{0.99in}|}{} \\
+\hhline{-------}
+
+\end{longtable}}
+\section{Reference}
+1. Aigner, Martin, and Günter M. Ziegler. Proofs from THE BOOK. Fourth ed.\\
+2. “How Do I Prove ln2 Is Irrational?” Quora, www.quora.com/How-do-I-prove-ln2-is-irrational.
+
+
+\end{document}
+
+
+
+ 
